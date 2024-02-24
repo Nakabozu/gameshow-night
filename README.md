@@ -1,71 +1,35 @@
 # NAKA'S BIRTHDAY GAME SHOW NIGHT!
 Welcome to Naka's Birthday Game Show Night!  I'm your host, Naka, and I'll be asking you dumb questions!
-## Category Ideas
-Pets?
-MayMays
 
-# Cat
-**Animal Crossing for Switch 2020 looks great**
-Cat makes animal crossing noises on camera
-<iframe width="560" height="315" src="https://www.youtube.com/embed/daF24OPfUVA?si=grq-1PHtXgu0FfNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+# NAKA'S TODOs
+- Double Jeopardy.  Everyone loves the Double Jeopardy!
+- Configure players from inside the game.
+- Maybe make the scores a number box so I can manually adjust?
 
-**I hear a hunter**
-Cat is attacked from a cat offscreen
-<iframe width="560" height="315" src="https://www.youtube.com/embed/92T8qdcSPj4?si=r9uVa28MEP92di_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+## Guide
+Here's a quick guide on how to use the application
+### Adding new questions
+To add new questions, do the following:
+1) Copy and rename one of the files in `/src/questions` folder
+2) Replace the questions and topic with your own
+3) Import the topics and questions you created in Step 2 to the `/src/components/JeopardyBoard.svelte` file
+4) Set the currentTopic and currentCards to the ones you imported in Step 3.
+It's as simple as that!
+### Hosting
+If you're the host, simply run `npm run dev` in the console and open the link.  The game should start.
+All data is transient, so if you refresh the page, scores are reset to 0. Be careful!  I may add a cookie system to fix this in the future.
 
-**Felis Yoshis**
-Cat floats in a pool of water that it's also drinking
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4WK2yGNUsyA?si=iFp3nMUfOJlC5oVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+Here's the step by step guide to hosting
+1) Ask whoever is leading the game which question they want
+2) Click on that card
+3) Ask the question
+    - NOTE: PLAYERS SHOULDN'T BUZZ IN UNTIL YOU FINISH READING THE ENTIRE PROMPT!
+4) If the answer is correct
+    1) Click the the space between the player's scores and the question to reveal the answer
+    2) Click the + button for the player that answered correctly to add the appropriate number of points
+5) If the answer is incorrect
+    1) Click the - button for the player that answered incorrectly to subtract the appropriate number of points
+6) Play until the board is cleared!
 
-**he part 2**
-Cat walks across the screen to music
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qodjc480DiY?si=yyqv77Ip-wfto5E2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-**woem**
-Cat on a doorbell camera goes WOEM
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hBEKgHDzm_s?si=KNfHLHeH7YwiUTZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
-
-## sNak Time!
-
-**How many bananas can Naka have a day**?
-1
-
-**How many eggs can Naka have a day**?
-2
-
-**Name the Five S's of Naka's diet**:
-Sushi, Sandwiches, Soup, Cereal, Salad,
-
-## LIES!
-**Naka is known for this scandalous kink**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_-plL1BTjR0?si=U1rcHViDN-7VcO4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-**Rogue Maroo**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bmHRBNpsxjY?si=TxNJ8c-9i28nADT9&amp;start=186" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## 😡
-
-**What do you have to do before you roll initiative in Roll 20**?
-Click your token on the map
-
-**How many eggs does Gaston eat to get large?**?
-2
-
-**Name the Five S's of Naka's diet**:
-Sushi, Sandwiches, Soup, Cereal, Salad,
-
-
-## BKFT Songs
-
-Shout
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ye7FKc1JQe4?si=uvsDIbuFxMfcq0Ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\
-
-Sexy body
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hphwfq1wLJs?si=139m5P90DLXclxgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Starts with Sorry
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V7NaFOMjFYY?si=AWtHCGa5tCCT3QVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-SMB Underground
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KraebqYHLBg?si=duf9c8yTUk0mrzDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+## Pro Tips
+- If you accidentally grey-out a card that shouldn't be greyed (not sure how you'd do this), you can right click it to toggle its state

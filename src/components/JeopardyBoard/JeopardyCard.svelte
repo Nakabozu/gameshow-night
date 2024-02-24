@@ -6,17 +6,24 @@
     export let questionProps = {};
     export let answerProps = {};
 
+    let isUsed = false;
     let isShowingAnswer = false;
     let isBeingShown = false;
+
+    const onRightClick = (/** @type {{ preventDefault: () => void; }} */ ev) => {
+        ev.preventDefault();
+        isUsed = !isUsed;
+    }
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <article
-    class="card"
+    class={`card ${isUsed ? 'greyify' : ""}`}
     on:click={() => {
         isBeingShown = true;
     }}
+    on:contextmenu={onRightClick}
 >{value}</article>
 
 {#if isBeingShown}
@@ -34,6 +41,7 @@
             else if(isBeingShown){
                 isBeingShown = !isBeingShown;
                 isShowingAnswer = false;
+                isUsed = true;
             }
         }}/>
     </section>
@@ -67,6 +75,11 @@
     .card{
         width: 100%;
         height: 100%;
+    }
+    
+    .greyify{
+        color: gray;
+        background-color: #000A47;
     }
 
     p{

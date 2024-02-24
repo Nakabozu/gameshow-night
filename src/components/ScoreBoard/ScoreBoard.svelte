@@ -3,7 +3,13 @@
     /**
      * @type {string[]}
      */
-    const playerInfo = ["Zuzu", "Kuro", "Ghost", "Jade", "Tanya"];
+    const playerInfo = [
+        "Zuzu",
+        "Kuro",
+        "Ghost",
+        // "Jade",
+        // "Tanya"
+    ];
 </script>
 
 <article>
