@@ -1,20 +1,16 @@
 <script>
     import PlayerCard from "./PlayerCard.svelte";
+    export let theme;
     /**
      * @type {string[]}
      */
-    const playerInfo = [
-        "Zuzu",
-        "Kuro",
-        "Ghost",
-        // "Jade",
-        // "Tanya"
-    ];
+    export let players;
 </script>
 
 <article>
-    {#each playerInfo as player}
-        <PlayerCard name={player}/>
+    {#each players as player}
+        <!-- Please keep names unique -->
+        <PlayerCard name={player} theme={theme}/>
     {/each}
 </article>
 

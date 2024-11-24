@@ -1,13 +1,13 @@
 <script>
+    // Components
     import JeopardyCard from "./JeopardyCard.svelte";
-    import birthday2024Cards, { birthday2024Topics } from "../../questions/Birthday2024";
-    import leagueTriviaRound1Cards, { leagueTriviaRound1Topics } from "../../questions/LeagueTriviaRound1";
 
-    const currentTopic = leagueTriviaRound1Topics;
-    const currentCards = leagueTriviaRound1Cards;
+    export let currentTopic;
+    export let currentCards;
+    export let theme;
 </script>
 
-<article class="jeopardy-board">
+<article class="jeopardy-board" style='--border-image: {theme?.borderImage}; --border: {theme?.border}; margin-bottom: {theme?.belowBorderImage ? "0px" : "150px"}'>
     <section class="jeopardy-topics">
         {#each currentTopic as topic}
             <div class="topic">
@@ -17,23 +17,28 @@
     </section>
     <section class="jeopardy-cards">
         {#each currentCards as {questionProps, answerProps}, index}
-        <div class="card">
-            <JeopardyCard value={((index%5)+1)*200} questionProps={questionProps} answerProps={answerProps}>
-                (Slotted content)
-            </JeopardyCard>
-        </div>
-    {/each}
+            <div class="card">
+                <JeopardyCard value={((index%5)+1)*200} questionProps={questionProps} answerProps={answerProps}>
+                    (Slotted content)
+                </JeopardyCard>
+            </div>
+        {/each}
     </section>
+    
 </article>
-
+    {#if theme?.belowBorderImage}
+        <img src={theme?.belowBorderImage} width="100%" height="150px" alt="Decorative border"/>
+    {/if}
 <style>
     .jeopardy-board{
         background-color: #000A74;
         width: 100%;
-        height: 100%;
+
+        margin-bottom: 150px;
 
         border-radius: 6px;
-        border: 10px solid grey;
+        border: var(--border);
+        border-image: var(--border-image);
     }
 
     .jeopardy-topics{
