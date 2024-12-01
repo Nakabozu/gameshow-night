@@ -91,7 +91,7 @@ export const christmas2024Cards = [
         answerProps: { headerText: "Mother's Day", imageSrc: "https://cdn.statcdn.com/Infographic/images/normal/33368.jpeg" }
     },
     {
-        questionProps: { headerText: "Which of the following is the closest to the amount of wrapping paper purchased in America each year", bodyText: "a. Enough to cover 1/4 of the US, b. Enough to cover every NFL football field, c. Enough to cover the land area of Manhattan, d. Enough to wrap the Hawaiian island Ni'ihau, The Forbidden Isle.", imageSrc: "https://m.media-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif" },
+        questionProps: { headerText: "Which of the following is the closest to the amount of wrapping paper purchased in America each year", bodyText: "a. Enough to cover 1/4 of the US, b. Enough to cover every NFL football field, c. Enough to cover the land area of Manhattan, d. Enough to cover The Forbidden Isle of Hawaii, Ni'ihau, .", imageSrc: "https://i.redd.it/msr7e3vsso521.jpg" },
         answerProps: { headerText: "~68 mi² of wrapping paper purchased each year and Ni'ihau is 69.5 mi²", bodyText: "Every NFL football field = ~0.06 mi², Land mass of Manhattan = ~23 mi², 1/4 of the US = ~1,000,000 mi².  If my math was right, you could wrap the Great Pyramid of Giza 1360 times with that much wrapping paper.", imageSrc: "https://www.tripsavvy.com/thmb/fPlj26BWn5Rhay0VdEysVIYCTuQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-523662554-c7ca5b428be149c6b614fa551a27084b.jpg" }
     },
     {
