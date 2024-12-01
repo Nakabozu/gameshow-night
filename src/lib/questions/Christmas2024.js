@@ -14,7 +14,8 @@ import '$lib/typeDefs';
 
 /** @type {string[]} */
 export const christmas2024Topics = [
-    "The cat's meow",           // BONUS: Which of our kitties makes this meow?
+    // "The cat's meow",        // BONUS: Which of our kitties makes this meow?
+    "Cat-astrophic Christmas ", // Cats in Christmas movies (usually getting hurt???)
     "Fright Before Christmas",  // The Monsters of the Christmas Season
     "Yule Be Spending",         // Questions about The Economics of Christmas
     "Sketchy Christmas Songs",  // Pictionary with Christmas song lyrics
@@ -26,28 +27,53 @@ export const christmas2024Topics = [
  * @type {{questionProps: ScreenData, answerProps: ScreenData}[]}
  */
 export const christmas2024Cards = [
-    ////////////////////////////
-    // #region The cat's meow //
-    ////////////////////////////
+
+    // ////////////////////////////
+    // // #region The cat's meow //
+    // ////////////////////////////
+    // {
+    //     questionProps: { headerText: "Match the Meow!", audioSrc: fenMeows },
+    //     answerProps: { headerText: "It's Fen!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=VteIOGjkgtmlc017&amp;clip=UgkxmEgqBzMKoBeIqcxCUcMGXXL2xfg7aYEF&amp;clipt=ELj9GBi2uxk" }
+    // },
+    // {
+    //     questionProps: { headerText: "Match the Meow!", audioSrc: cloverMeows },
+    //     answerProps: { headerText: "It's Clover!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=I8L1mILSaYpyIa4Q&amp;clip=UgkxJUK89FfP8w780fhe4VMd1MQfF8ZznxpH&amp;clipt=EMHAJhjAqyc" }
+    // },
+    // {
+    //     questionProps: { headerText: "Match the Meow!", audioSrc: mizuMeows },
+    //     answerProps: { headerText: "It's Mizuki!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=RGO-Emy87IpvL50S&amp;clip=UgkxxjG7_J1S2l3JJ4B3au1eHq5Jg8EN5kVq&amp;clipt=ENimLxj08C8" }
+    // },
+    // {
+    //     questionProps: { headerText: "Match the Meow!", audioSrc: moonMeows },
+    //     answerProps: { headerText: "It's Moon!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=xWqEerMk0FhkHbhx&amp;clip=UgkxxiBz3BAX4EKcQqsbBQgrawf-oML79OK4&amp;clipt=EKi8LRj72y4" }
+    // },
+    // {
+    //     questionProps: { headerText: "Match the Noise!", audioSrc: balooCheesePuff },
+    //     answerProps: { headerText: "Baloo and Cheese Puff", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=DH1iacgOllJdCBDz&amp;clip=UgkxL4R3hCl_VjUt0W4YCqq3gc7fBpvqNbzm&amp;clipt=EOC-NBj8iDU"}
+    // },
+    /////////////////////////////////////
+    // #endregion                      // 
+    // #region Cat-astrophic Christmas //
+    /////////////////////////////////////
     {
-        questionProps: { headerText: "Match the Meow!", audioSrc: fenMeows },
-        answerProps: { headerText: "It's Fen!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=VteIOGjkgtmlc017&amp;clip=UgkxmEgqBzMKoBeIqcxCUcMGXXL2xfg7aYEF&amp;clipt=ELj9GBi2uxk" }
+        questionProps: { headerText: "What Christmas movie is this cat from?", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/nightmarebeforechristmas08.jpg", startingX: 1925, startingY: 1300, startingZoom: 500} },
+        answerProps: { headerText: "The Nightmare Before Christmas (1993)", bodyText: "In 2001, Walt Disney Pictures wanted to produce a sequel using computer animation, but Tim Burton convinced them to drop the idea as it would compromise the \"purity\" of the film.", videoSrc: "https://www.youtube.com/embed/ZVuToMilP0A?si=whz2XlePvblIQFJa&amp;clip=UgkxPH4X4cUg5e93if6ddrCb3k4pM7ondTNM&amp;clipt=ENS8BBjg6gQ" }
     },
     {
-        questionProps: { headerText: "Match the Meow!", audioSrc: cloverMeows },
-        answerProps: { headerText: "It's Clover!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=I8L1mILSaYpyIa4Q&amp;clip=UgkxJUK89FfP8w780fhe4VMd1MQfF8ZznxpH&amp;clipt=EMHAJhjAqyc" }
+        questionProps: { headerText: "What Christmas movie is this cat from?", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/howthegrinch02.jpg", startingX: 3125, startingY: 750, startingZoom: 575} },
+        answerProps: { headerText: "How the Grinch Stole Christmas (2000)", bodyText: "The prosthetic make-up Jim Carrey wore took about two hours to apply and one hour to remove. Jim Carrey revealed that he felt so confined and uncomfortable in the latex skin and yak hair costume that he sought counselling from a CIA agent who taught him torture-resistance techniques.", videoSrc: "https://www.youtube.com/embed/cFlzJIU1awE?si=N6FJjaDZpLmOhoXX", startTime: 26 }
     },
     {
-        questionProps: { headerText: "Match the Meow!", audioSrc: mizuMeows },
-        answerProps: { headerText: "It's Mizuki!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=RGO-Emy87IpvL50S&amp;clip=UgkxxjG7_J1S2l3JJ4B3au1eHq5Jg8EN5kVq&amp;clipt=ENimLxj08C8" }
+        questionProps: { headerText: "What Christmas movie is this cat from?", bodyText: "Double points if you know the cat's name", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/christmaswithkranks07.jpg", startingX: 1550, startingY: 500, startingZoom: 445} },
+        answerProps: { headerText: "Muffles from Christmas with the Kranks (2004)", bodyText: "The film is based on John Grisham's book \"Skipping Christmas.\" The original title is seen in the newspaper article after the tanning salon incident. The title was changed to avoid confusion with \"Surviving Christmas\", another holiday comedy released in the same year.", videoSrc: "https://www.youtube.com/embed/jGfeNBDyRXU?si=LF52jcDIPh88AQmx&amp;clip=UgkxRQKnYZkQF64D1ncVxo156s6Go1ANIFrj&amp;clipt=EPbNBxj_4Qk" }
     },
     {
-        questionProps: { headerText: "Match the Meow!", audioSrc: moonMeows },
-        answerProps: { headerText: "It's Moon!", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=xWqEerMk0FhkHbhx&amp;clip=UgkxxiBz3BAX4EKcQqsbBQgrawf-oML79OK4&amp;clipt=EKi8LRj72y4" }
+        questionProps: { headerText: "What Christmas movie is this cat from?", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/natlamchristmasvacation01.jpg", startingX: 1550, startingY: 500, startingZoom: 445} },
+        answerProps: { headerText: "National Lampoon's Christmas Vacation (1989)", bodyText: "After failing to get the Christmas lights to work one last time, Clark Griswold takes his frustration out on the plastic decorations in the front yard. Chevy Chase actually broke his pinky finger while punching Santa Claus. The film kept rolling, and the take was used.", videoSrc: "https://www.youtube.com/embed/PJW3Jpqjx5s?si=GU1jtXhyvN9nCFJ5&start=0&end=15" }
     },
     {
-        questionProps: { headerText: "Match the Noise!", audioSrc: balooCheesePuff },
-        answerProps: { headerText: "Baloo and Cheese Puff", videoSrc: "https://www.youtube.com/embed/cms3dULuKL4?si=DH1iacgOllJdCBDz&amp;clip=UgkxL4R3hCl_VjUt0W4YCqq3gc7fBpvqNbzm&amp;clipt=EOC-NBj8iDU"}
+        questionProps: { headerText: "What Christmas movie is this cat from?", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/scrooged02.jpg", startingX: 1750, startingY: 430, startingZoom: 300} },
+        answerProps: { headerText: "Scrooged (1988)", imageSrc: "https://resizing.flixster.com/3wiyTtNcbh9TOOSNOw5Cp0MuIto=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11289_v_h9_ad.jpg" }
     },
     /////////////////////////////////////
     // #endregion                      //

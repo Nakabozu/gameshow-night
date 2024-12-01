@@ -12,6 +12,7 @@
  * @property {string} headerText - Large text at the top of the screen
  * @property {string} [bodyText] - Small text at the bottom of the screen below image and video.
  * @property {string} [imageSrc] - The link to the image.
+ * @property {ZoomOutImageType} [zoomOutImageData] - The link to the image that will be slowly zoomed out.  If provided, startingX, startingY, and startingZoom should be set.
  * @property {string} [videoSrc] - The link to the video. NOTE: THIS NEEDS TO BE COPIED FROM THE EMBEDDED SHARE LINK ON YOUTUBE.
  * @property {string} [audioSrc] - The link to an audio track.
  * @property {number | string} [startTime] - Start time of the video in seconds.  No clue why, but this doesn't work with longer videos???
@@ -23,3 +24,12 @@
  * @property {number | string} [videoHeight] - Height of the embedded YouTube video in pixels.  Do not at units like `px` to the end.
  * @property {number | string} [videoWidth] - Width of the embedded YouTube video in pixels.  Do not at units like `px` to the end.
  * */
+
+/** 
+ * Props passed to the Open Screen component
+ * @typedef {Object} ZoomOutImageType
+ * @property {string} imageSrc - The link to the image.
+ * @property {number} startingX - The starting **pixel** value of the CSS `left` property for a ZoomOutImage
+ * @property {number} startingY - The starting **pixel** value of the CSS `top` property for a ZoomOutImage
+ * @property {number} startingZoom - The starting **percent** value of the CSS `height` property for a ZoomOutImage
+*/

@@ -1,11 +1,19 @@
 <script>
     import { page } from '$lib/store';
+    import ZoomOutImage from '../SpecialQuestions/ZoomOutImage.svelte';
+    import '$lib/typeDefs'
 
     export let headerText = "HEADER";
     export let bodyText = "";
 
     // IMAGE DETAILS
     export let imageSrc = "";
+
+    // ZOOM OUT IMAGE DETAILS
+    /**
+     * @type {ZoomOutImageType}
+     */
+    export let zoomOutImageData;
 
     // VIDEO DETAILS
     export let videoSrc = "";
@@ -50,6 +58,15 @@
             <source srcset={imageSrc} />
             <img src={imageSrc} alt={bodyText} />
         </picture>
+    {/if}
+
+    {#if zoomOutImageData}
+        <ZoomOutImage 
+            imageSrc={zoomOutImageData?.imageSrc}
+            startingY={zoomOutImageData?.startingY}
+            startingX={zoomOutImageData?.startingX}
+            startingZoom={zoomOutImageData?.startingZoom}
+        />
     {/if}
 
     {#if videoSrc && isYoutube}
