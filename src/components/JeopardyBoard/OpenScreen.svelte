@@ -1,9 +1,11 @@
 <script>
-    import { page } from '$lib/store';
+    import { onMount } from 'svelte';
+    import { page, dailyDoubleIndex, currentQuestionIndex } from '$lib/store';
+    import dailyDoubleSound from '$lib/audio/DailyDouble.mp3';
     import ZoomOutImage from '../SpecialQuestions/ZoomOutImage.svelte';
     import '$lib/typeDefs'
 
-    export let headerText = "HEADER";
+    export let headerText = "OOPS HEADER";
     export let bodyText = "";
 
     // IMAGE DETAILS
@@ -28,6 +30,14 @@
     export let isShowingControls = true;
     export let audioSrc = "";
 
+    /** @type {HTMLAudioElement}*/
+    let audioElement;
+    onMount(()=>{
+        if($dailyDoubleIndex === $currentQuestionIndex && $page === 'question'){
+            audioElement.play();
+        }
+    });
+
     const goToNextPage = () => {
         /** @type {'jeopardy' | 'answer' | 'question'}*/
         let newPage = 'jeopardy';
@@ -46,6 +56,7 @@
 <!-- This span creates the blue backdrop -->
 <span/>
 
+<audio src={dailyDoubleSound} bind:this={audioElement}/>
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <article on:click={goToNextPage}>

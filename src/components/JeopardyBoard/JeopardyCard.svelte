@@ -1,15 +1,19 @@
 <script>
-    import { lastCardsScore, page, currentQnA } from "$lib/store";
+    import { lastCardsScore, page, currentQuestionIndex, dailyDoubleIndex } from "$lib/store";
     export let value = 0;
-    export let currentCard = {questionProps: {headerText: "UH OH!"}, answerProps: {headerText: "UH OH!"}}
+    export let currentCardIndex = 0;
     let isUsed = false;
 
     const updateQuestionDetails = () => {
-        $currentQnA = currentCard;
+        $currentQuestionIndex = currentCardIndex;
     }
 
     const updateLastCardsScore = () => {
-        $lastCardsScore = value;
+        let newValue = value;
+        if($dailyDoubleIndex === currentCardIndex){
+            newValue *= 2;
+        }
+        $lastCardsScore = newValue;
     }
 
     const onRightClick = (/** @type {{ preventDefault: () => void; }} */ ev) => {

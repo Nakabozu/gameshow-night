@@ -3,7 +3,7 @@
 
     // Components
     import JeopardyCard from "./JeopardyCard.svelte";
-    import { page, currentQnA } from "$lib/store";
+    import { page, currentQuestionIndex } from "$lib/store";
     import OpenScreen from "./OpenScreen.svelte";
 
     export let currentTopic;
@@ -13,7 +13,7 @@
     /**
      * @type {ScreenData}
      */
-    $: openScreenProps = $currentQnA[$page === 'question' ? 'questionProps' : 'answerProps'];
+    $: openScreenProps = currentCards[$currentQuestionIndex][$page === 'question' ? 'questionProps' : 'answerProps'];
 </script>
 
 <div class="jeopardy-board-container" style={$page !== "jeopardy" ? "display: none" : undefined}>
@@ -28,7 +28,7 @@
         <section class="jeopardy-cards" >
             {#each currentCards as currentCard, index}
                 <div class="card">
-                    <JeopardyCard value={((index%5)+1)*200} currentCard={currentCard}>
+                    <JeopardyCard value={((index%5)+1)*200} currentCardIndex={index}>
                         (Slotted content)
                     </JeopardyCard>
                 </div>

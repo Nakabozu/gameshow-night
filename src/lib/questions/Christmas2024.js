@@ -64,12 +64,12 @@ export const christmas2024Cards = [
         answerProps: { headerText: "How the Grinch Stole Christmas (2000)", bodyText: "The prosthetic make-up Jim Carrey wore took about two hours to apply and one hour to remove. Jim Carrey revealed that he felt so confined and uncomfortable in the latex skin and yak hair costume that he sought counselling from a CIA agent who taught him torture-resistance techniques.", videoSrc: "https://www.youtube.com/embed/cFlzJIU1awE?si=N6FJjaDZpLmOhoXX", startTime: 26 }
     },
     {
-        questionProps: { headerText: "What Christmas movie is this cat from?", bodyText: "Double points if you know the cat's name", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/christmaswithkranks07.jpg", startingX: 1550, startingY: 500, startingZoom: 445} },
-        answerProps: { headerText: "Muffles from Christmas with the Kranks (2004)", bodyText: "The film is based on John Grisham's book \"Skipping Christmas.\" The original title is seen in the newspaper article after the tanning salon incident. The title was changed to avoid confusion with \"Surviving Christmas\", another holiday comedy released in the same year.", videoSrc: "https://www.youtube.com/embed/jGfeNBDyRXU?si=LF52jcDIPh88AQmx&amp;clip=UgkxRQKnYZkQF64D1ncVxo156s6Go1ANIFrj&amp;clipt=EPbNBxj_4Qk" }
-    },
-    {
         questionProps: { headerText: "What Christmas movie is this cat from?", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/natlamchristmasvacation01.jpg", startingX: 1550, startingY: 500, startingZoom: 445} },
         answerProps: { headerText: "National Lampoon's Christmas Vacation (1989)", bodyText: "After failing to get the Christmas lights to work one last time, Clark Griswold takes his frustration out on the plastic decorations in the front yard. Chevy Chase actually broke his pinky finger while punching Santa Claus. The film kept rolling, and the take was used.", videoSrc: "https://www.youtube.com/embed/PJW3Jpqjx5s?si=GU1jtXhyvN9nCFJ5&start=0&end=15" }
+    },
+    {
+        questionProps: { headerText: "What Christmas movie is this cat from?", bodyText: "Double points if you know the cat's name", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/christmaswithkranks07.jpg", startingX: 1550, startingY: 500, startingZoom: 445} },
+        answerProps: { headerText: "Muffles from Christmas with the Kranks (2004)", bodyText: "The film is based on John Grisham's book \"Skipping Christmas.\" The original title is seen in the newspaper article after the tanning salon incident. The title was changed to avoid confusion with \"Surviving Christmas\", another holiday comedy released in the same year.", videoSrc: "https://www.youtube.com/embed/jGfeNBDyRXU?si=LF52jcDIPh88AQmx&amp;clip=UgkxRQKnYZkQF64D1ncVxo156s6Go1ANIFrj&amp;clipt=EPbNBxj_4Qk" }
     },
     {
         questionProps: { headerText: "What Christmas movie is this cat from?", zoomOutImageData: {imageSrc: "http://www.cinemacats.com/wp-content/uploads/movies/scrooged02.jpg", startingX: 1750, startingY: 430, startingZoom: 300} },
@@ -105,7 +105,7 @@ export const christmas2024Cards = [
     // #region Yule Be Spending //
     //////////////////////////////
     {
-        questionProps: { headerText: "This department store chain published a Christmas-themed catalog that nearly 1/5 of the US population used for Christmas shopping at its peak.", imageSrc: "https://blog.flipsnack.com/wp-content/uploads/2019/10/Cover-top-brands.jpg" },
+        questionProps: { headerText: "This department store chain published a Christmas-themed catalog that nearly 1/6 of the US population used for Christmas shopping at its peak.", imageSrc: "https://blog.flipsnack.com/wp-content/uploads/2019/10/Cover-top-brands.jpg" },
         answerProps: { headerText: "Sears", bodyText: "The first Sears Christmas Wish Book was published in 1933, the middle of The Great Depression.", videoSrc: "https://media.hearstapps.com/loop/video/sears-wishbook-christmas-feature-4-1576711915.mp4", isYoutube: false, isMuted: true }
     },
     {
@@ -117,12 +117,12 @@ export const christmas2024Cards = [
         answerProps: { headerText: "Mother's Day", imageSrc: "https://cdn.statcdn.com/Infographic/images/normal/33368.jpeg" }
     },
     {
-        questionProps: { headerText: "Which of the following is the closest to the amount of wrapping paper purchased in America each year", bodyText: "a. Enough to cover 1/4 of the US, b. Enough to cover every NFL football field, c. Enough to cover the land area of Manhattan, d. Enough to cover The Forbidden Isle of Hawaii, Ni'ihau, .", imageSrc: "https://i.redd.it/msr7e3vsso521.jpg" },
+        questionProps: { headerText: "Which of the following is the closest to the amount of wrapping paper purchased in America each year", bodyText: "a. Enough to cover 1/4 of the US, b. Enough to cover every NFL football field, c. Enough to cover the land area of Manhattan, d. Enough to cover The Forbidden Isle of Hawaii, Ni'ihau.", imageSrc: "https://i.redd.it/msr7e3vsso521.jpg" },
         answerProps: { headerText: "~68 mi² of wrapping paper purchased each year and Ni'ihau is 69.5 mi²", bodyText: "Every NFL football field = ~0.06 mi², Land mass of Manhattan = ~23 mi², 1/4 of the US = ~1,000,000 mi².  If my math was right, you could wrap the Great Pyramid of Giza 1360 times with that much wrapping paper.", imageSrc: "https://www.tripsavvy.com/thmb/fPlj26BWn5Rhay0VdEysVIYCTuQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-523662554-c7ca5b428be149c6b614fa551a27084b.jpg" }
     },
     {
-        questionProps: { headerText: "How much does Mariah Carey make in royalties for \"All I Want for Christmas Is You\" per year?", bodyText: "This question has NO POINT PENALTY for wrong answers. Round your guess to one significant figure. For each guess, I'll let everyone know higher or lower." },
-        answerProps: { headerText: "~3 million dollars", bodyText: "Royalties average out to roughly half a cent per play in today's economy, so that's ~600 million plays worldwide" }
+        questionProps: { headerText: "How much does Mariah Carey make in royalties for \"All I Want for Christmas Is You\" per year?", bodyText: "No point penalty for wrong answers. Round your guess to one significant figure. For each guess, I'll let everyone know higher or lower.", imageSrc: "https://media2.giphy.com/media/f5AISF6hqbn0tFCSEk/giphy.gif?cid=6c09b952a1wkqvw9oy723z7n7oxc4xigoz60fhctn0otcqz9&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"},
+        answerProps: { headerText: "~$3,000,000", bodyText: "Royalties average out to roughly half a cent per play in today's economy, so that's ~600 million plays worldwide.  The next runner up, \"Last Christmas (1984)\" by Wham! isn't even close, netting just over $500,000 per year.", videoSrc: "https://www.youtube.com/embed/1giQVuoTAFM?si=yuRzUGWnm0I3OnJu" }
     },
     ////////////////////////////
     // #endregion             //
@@ -154,7 +154,7 @@ export const christmas2024Cards = [
     ///////////////////////////////
     {
         questionProps: { headerText: "Solve the Riddle", bodyText: "Move me and I become the devil. I operate on a world wide level. My mantra, I recite in threes. Beware I have my eye on thee."  },
-        answerProps: { headerText: "Santa", imageSrc: "https://the-public-domain-review.imgix.net/collections/a-pictorial-history-of-santa-claus/800px-Santa_Claus_Sugar_Plums2C_1868.png?fit=max&w=1200&h=850"}
+        answerProps: { headerText: "Santa", bodyText: "Contrary to popular belief, 1930s Coca-Cola advertisements weren't the progenitor of a plump and jolly Santa dressed in red.  Instead, it was the cartoons and advertisements of Thomas Nast who spread this depiction of Father Christmas for decades starting in 1863.", imageSrc: "https://the-public-domain-review.imgix.net/collections/a-pictorial-history-of-santa-claus/800px-Santa_Claus_Sugar_Plums2C_1868.png?fit=max&w=1200&h=850"}
     },
     {
         questionProps: { headerText: "Solve the Riddle", bodyText: "Often used for art and eating; but on its own it's something fleeting. It falls for miles without breaks. When held tightly, a weapon it makes. If its quick march continues steadily, then take heed, for it is deadly."},
