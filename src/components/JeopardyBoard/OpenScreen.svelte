@@ -48,7 +48,6 @@
         if($page === 'jeopardy')
             newPage = 'question'
         
-        console.log(`${$page} -> ${newPage}`);
         $page = newPage;
     }
 </script>

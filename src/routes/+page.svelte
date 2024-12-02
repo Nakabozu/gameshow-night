@@ -29,7 +29,6 @@
 </svelte:head>
 
 <section style="background: center / cover no-repeat url({theme?.background}), #1133EE">
-	{$dailyDoubleIndex}
 	<JeopardyBoard currentTopic={currentTopic} currentCards={currentCards} theme={theme}/>
 	<ScoreBoard theme={theme}/>
 </section>
