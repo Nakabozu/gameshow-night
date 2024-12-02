@@ -3,7 +3,7 @@ import aiAhri from '$lib/images/LeagueTriviaRound1/AiAhri.webp';
 import aiRenekton from '$lib/images/LeagueTriviaRound1/AiRenekton.webp';
 import aiShaco from '$lib/images/LeagueTriviaRound1/AiShaco.jpg';
 import aiSinged from '$lib/images/LeagueTriviaRound1/AiSinged.jpg';
-import aiVelkoz from '$lib/images/LeagueTriviaRound1/AIVelkoz.jpg';
+import aiVelkoz from '$lib/images/LeagueTriviaRound1/AiVelkoz.jpg';
 import '$lib/typeDefs';
 
 /** @type {string[]} */

@@ -1,14 +1,14 @@
 // Who's That Pokemon images
 import jackFrostNipping from '$lib/images/Christmas2024/JackFrostNippingAtYourNose.webp';
 import convertibleToo from '$lib/images/Christmas2024/A54ConvertibleTooLightBlue.webp';
-import twelveDays from '$lib/images/Christmas2024/12Days.webp';
+import twelveDays from '$lib/images/Christmas2024/TwelveDays.webp';
 import termiteSmile from '$lib/images/Christmas2024/YouHaveTermitesInYourSmile.webp';
 import rudolphNose from '$lib/images/Christmas2024/RudolfHadAVeryShinyNose.webp';
-import cloverMeows from '$lib/audio/ManyCloverMeows.mp3';
-import fenMeows from '$lib/audio/ManyFenMeows.mp3';
-import mizuMeows from '$lib/audio/ManyMizukiMeows.mp3';
-import moonMeows from '$lib/audio/ManyMoonMeows.mp3';
-import balooCheesePuff from '$lib/audio/BalooAndCheesePuff.mp3';
+// import cloverMeows from '$lib/audio/ManyCloverMeows.mp3';
+// import fenMeows from '$lib/audio/ManyFenMeows.mp3';
+// import mizuMeows from '$lib/audio/ManyMizukiMeows.mp3';
+// import moonMeows from '$lib/audio/ManyMoonMeows.mp3';
+// import balooCheesePuff from '$lib/audio/BalooAndCheesePuff.mp3';
 
 import '$lib/typeDefs';
 
