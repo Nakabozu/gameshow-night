@@ -4,6 +4,7 @@
     import dailyDoubleSound from '$lib/audio/DailyDouble.mp3';
     import ZoomOutImage from '../SpecialQuestions/ZoomOutImage.svelte';
     import '$lib/typeDefs'
+  import DailyDouble from '../SpecialQuestions/DailyDouble.svelte';
 
     export let headerText = "OOPS HEADER";
     export let bodyText = "";
@@ -32,9 +33,12 @@
 
     /** @type {HTMLAudioElement}*/
     let audioElement;
+    let showDailyDouble = false;
     onMount(()=>{
         if($dailyDoubleIndex === $currentQuestionIndex && $page === 'question'){
             audioElement.play();
+            showDailyDouble = true;
+            setTimeout(()=>{showDailyDouble = false}, 3000);
         }
     });
 
@@ -55,7 +59,11 @@
 <!-- This span creates the blue backdrop -->
 <span/>
 
+<!-- !!!DAILY DOUBLE!!! -->
 <audio src={dailyDoubleSound} bind:this={audioElement}/>
+{#if showDailyDouble}
+    <DailyDouble/>
+{/if}
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <article on:click={goToNextPage}>
