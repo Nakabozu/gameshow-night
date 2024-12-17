@@ -10,13 +10,48 @@
     // Themes
     import winterTheme from '$lib/themes/winter/config';
 	// State
-	import { dailyDoubleIndex } from "$lib/store";
+	import { ansiR, dailyDoubleIndex, mT } from "$lib/store";
 
     //#region SETTINGS
     const currentTopic = christmas2024Topics;
     const currentCards = christmas2024Cards;
     const theme = winterTheme;
     //#endregion
+
+	/**
+	 * Checks to see if the string starts with http or ends in one of the file extensions I use in the /lib/images folder
+	 * @param {string} stringToCheck
+	 */
+	const isImage = (stringToCheck) => {
+		if(!stringToCheck || typeof stringToCheck !== 'string'){
+			return false;
+		}
+		const splicedStringArr = stringToCheck.split('.');
+		const extension = splicedStringArr.length > 0 ? splicedStringArr[splicedStringArr.length-1].toLocaleLowerCase() : '';
+		return stringToCheck.startsWith("http") || extension === "png" || extension === "jpg" || extension === "webp" || extension === "svg";
+	}
+
+	$: imagesToPreload = () => {
+		let finalArr = [];
+		if(isImage(theme?.background)){
+			finalArr.push(theme?.background);
+		}
+		if(isImage(theme?.podium?.src)){
+			finalArr.push(theme?.podium?.src);
+		}
+		if(isImage(theme?.belowBorderImage)){
+			finalArr.push(theme?.belowBorderImage);
+		}
+		currentCards.forEach((card) => {
+			if(card?.answerProps?.imageSrc)
+				finalArr.push(card?.answerProps?.imageSrc)
+			if(card?.questionProps?.imageSrc)
+				finalArr.push(card?.questionProps?.imageSrc)
+
+		})
+		console.log(`${mT}Preloaded Image List:${ansiR}`, finalArr);
+		return finalArr;
+	}
 
 	onMount(()=>{
 		$dailyDoubleIndex = Math.floor(Math.random() * currentCards.length);
@@ -26,10 +61,12 @@
 <svelte:head>
 	<title>Welcome to the Show!</title>
 	<meta name="description" content="Game Show Night with Naka!" />
+	{#each imagesToPreload() as image}
+		<link rel="preload" as="image" href={image} />
+	{/each}
 </svelte:head>
 
 <section style="background: center / cover no-repeat url({theme?.background}), #1133EE">
-	{$dailyDoubleIndex}
 	<JeopardyBoard currentTopic={currentTopic} currentCards={currentCards} theme={theme}/>
 	<ScoreBoard theme={theme}/>
 </section>

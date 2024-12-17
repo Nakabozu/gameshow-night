@@ -34,7 +34,14 @@
     /** @type {HTMLAudioElement}*/
     let audioElement;
     let showDailyDouble = false;
+    let timer = 20;
     onMount(()=>{
+        timer = 20;
+        setInterval(()=>{
+            if(timer > 0){
+                timer = timer - 1;
+            }
+        }, 1000);
         if($dailyDoubleIndex === $currentQuestionIndex && $page === 'question'){
             audioElement.play();
             showDailyDouble = true;
@@ -69,7 +76,11 @@
 <article on:click={goToNextPage}>
     <h1>
         {headerText}
+        {#if $page === 'question' && timer > 0}
+            <div>{timer}</div>
+        {/if}
     </h1>
+    
 
     {#if imageSrc}
         <picture>
@@ -150,7 +161,11 @@
     }
     h1 {
         text-wrap: balance;
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 5px 0px;
+    }
+
+    h1 > div{
+        font-size: large;
     }
 
     picture img {

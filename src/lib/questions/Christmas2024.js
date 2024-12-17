@@ -161,12 +161,12 @@ export const christmas2024Cards = [
         answerProps: { headerText: "Snow", imageSrc: "https://www.sltrib.com/resizer/COf2BSjajW8LKnB8wkyb7qnzWFA=/arc-anglerfish-arc2-prod-sltrib/public/W4MIEOALEZFIFMY6Y5K2CLSEUA.JPG" }
     },
     {
-        questionProps: { headerText: "Solve the Riddle", bodyText: "With bright colors it's adorned. It might be carried, displayed, or worn. Sometimes Cubed. Sometimes with a knot. Forever a secret this is not." }, //Rarely by skill this thing is wrought, as, most often, it is bought.
-        answerProps: { headerText: "A present", imageSrc: "https://media.istockphoto.com/id/1356160396/photo/group-of-different-christmas-gift-boxes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=B6_-qOiVisWF0akpfi0CuSjHkXNKaJlxd3KIhKCwzeU=" }
-    },
-    {
         questionProps: { headerText: "Solve the Riddle", bodyText: "In collars, ribbons, and skirts I dress. While standing still, I make a mess. I've a hat akin to specks in the sky. I'll add a twinkle to your eye." }, //I feed myself 'till the holiday season. Then I'm headed inside for a festive reason. 
         answerProps: { headerText: "A Christmas Fir", imageSrc: "https://assets.wfcdn.com/im/43772517/resize-h755-w755%5Ecompr-r85/2589/258926631/Artificial+Christmas+Tree+with+LED+Lights%2C+Ornament+Balls%2C+Tree+Top+Star%2C+Tree+Skirt+Set.jpg"  }
+    },
+    {
+        questionProps: { headerText: "Solve the Riddle", bodyText: "Rarely by skill this thing is wrought, as, most often, it is bought. Sometimes a cube. Sometimes with a knot. Forever a secret this is not." }, //Rarely by skill this thing is wrought, as, most often, it is bought.
+        answerProps: { headerText: "A present", imageSrc: "https://media.istockphoto.com/id/1356160396/photo/group-of-different-christmas-gift-boxes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=B6_-qOiVisWF0akpfi0CuSjHkXNKaJlxd3KIhKCwzeU=" }
     },
     {
         questionProps: { headerText: "Solve the Riddle", bodyText: "“There is no armor I can't crack!” is this warrior's dictum. You prep a target from the sack, gifting it's next victim. The more its fed, the more you feast: Kernels, not of wisdom"  },
