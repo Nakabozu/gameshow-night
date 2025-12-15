@@ -43,12 +43,16 @@ import "$lib/typeDefs";
 
 /** @type {string[]} */
 export const christmas2025Topics = [
-    // "The cat's meow",     // BONUS: Which of our kitties makes this meow?
-    "Festive Fuzzies", // Silhouettes of our cats in christmas attire
-    "Last Christmas", // I give you a Christmas group chat quote.  You give who said it.
+    // FRIENDS ONLY
+    // "Last Christmas", // I give you a Christmas group chat quote.  You give who said it.
+    // "Festive Fuzzballs", // Silhouettes of our cats in christmas attire
+    // "Tanya, why?", // I give you a Tanya Christmas quote and you need give the general context for why she said it.
+    // EVERYONE ELSE!
+    "Who Roasts the Beast", // I give you a Holiday food, you give me its country of origin. The title is a great pun because THE WHOs roast the beast.
+    "Holiday Cameo", // Movies that have a Christmas scene but aren't Christmas movies
+    "Christmas in Review", // I give you a review of a Christmas movie or episode, you guess the movie.
     "Sketchy Christmas Songs", // I draw Christmas song lyrics with my left hand.  You guess the lyrics!
-    "Tanya, why?", // I give you a Tanya Christmas quote and you need give the general context for why she said it.
-    "Stocking Stumpers", // Riddles that are Christmas themed
+    "Match That Fit", // I give you a christmas character costume and you tell me the character
     "Mini Merry Melodies", // Name the song with only a short clip to go off of
 ];
 
@@ -57,165 +61,400 @@ export const christmas2025Topics = [
  */
 export const christmas2025Cards = [
     // ////////////////////////////
-    // // #region The cat's meow //
+    // // #endregion             //
+    // // #region Last Christmas //
     // ////////////////////////////
     // {
-    //     questionProps: { headerText: "Match the Meow!", audioSrc: fenMeows },
-    //     answerProps: {
-    //         headerText: "It's Fen!",
-    //         videoSrc:
-    //             "https://www.youtube.com/embed/cms3dULuKL4?si=VteIOGjkgtmlc017&amp;clip=UgkxmEgqBzMKoBeIqcxCUcMGXXL2xfg7aYEF&amp;clipt=ELj9GBi2uxk",
+    //     questionProps: {
+    //         headerText: "Last Christmas, who said this quote?",
+    //         bodyText: "Small penis manly",
     //     },
-    // },
-    // {
-    //     questionProps: { headerText: "Match the Meow!", audioSrc: cloverMeows },
     //     answerProps: {
-    //         headerText: "It's Clover!",
-    //         videoSrc:
-    //             "https://www.youtube.com/embed/cms3dULuKL4?si=I8L1mILSaYpyIa4Q&amp;clip=UgkxJUK89FfP8w780fhe4VMd1MQfF8ZznxpH&amp;clipt=EMHAJhjAqyc",
-    //     },
-    // },
-    // {
-    //     questionProps: { headerText: "Match the Meow!", audioSrc: mizuMeows },
-    //     answerProps: {
-    //         headerText: "It's Mizuki!",
-    //         videoSrc:
-    //             "https://www.youtube.com/embed/cms3dULuKL4?si=RGO-Emy87IpvL50S&amp;clip=UgkxxjG7_J1S2l3JJ4B3au1eHq5Jg8EN5kVq&amp;clipt=ENimLxj08C8",
-    //     },
-    // },
-    // {
-    //     questionProps: { headerText: "Match the Meow!", audioSrc: moonMeows },
-    //     answerProps: {
-    //         headerText: "It's Moon!",
-    //         videoSrc:
-    //             "https://www.youtube.com/embed/cms3dULuKL4?si=xWqEerMk0FhkHbhx&amp;clip=UgkxxiBz3BAX4EKcQqsbBQgrawf-oML79OK4&amp;clipt=EKi8LRj72y4",
+    //         headerText: "Zuzu",
+    //         bodyText:
+    //             "In response to an article Tanya linked about why penises in older paintings are so small",
+    //         imageSrc: lcPP,
     //     },
     // },
     // {
     //     questionProps: {
-    //         headerText: "Match the Noise!",
-    //         audioSrc: balooCheesePuff,
+    //         headerText: "Last Christmas, who said this quote?",
+    //         bodyText: "$820 Apple chain. A chain to hold your apple.",
     //     },
     //     answerProps: {
-    //         headerText: "Baloo and Cheese Puff",
-    //         videoSrc:
-    //             "https://www.youtube.com/embed/cms3dULuKL4?si=DH1iacgOllJdCBDz&amp;clip=UgkxL4R3hCl_VjUt0W4YCqq3gc7fBpvqNbzm&amp;clipt=EOC-NBj8iDU",
+    //         headerText: "Ghost",
+    //         bodyText:
+    //             "After posting a link to a $820 chain to hold your apple.",
+    //         imageSrc: lcApple,
     //     },
     // },
-    /////////////////////////////
-    // #endregion              //
-    // #region Festive Fuzzies //
-    /////////////////////////////
+    // {
+    //     questionProps: {
+    //         headerText: "Last Christmas, who said this quote?",
+    //         bodyText: "magical chihuahua",
+    //     },
+    //     answerProps: {
+    //         headerText: "Melinda",
+    //         bodyText:
+    //             "In a conversation about the kinds of pets brought to Hogwarts",
+    //         imageSrc: lcChihuahua,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Last Christmas, who said this quote?",
+    //         bodyText: "why are santa and mrs. claus different poop types",
+    //     },
+    //     answerProps: {
+    //         headerText: "Kuro",
+    //         bodyText: "In response to Zuzu posting a very weird picture.",
+    //         imageSrc: lcPoo,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Last Christmas, who said this quote?",
+    //         bodyText: "Wrong Thong is my new drag name",
+    //     },
+    //     answerProps: {
+    //         headerText: "Sef",
+    //         bodyText: "In response to a review about a St. Clair Bingo",
+    //         imageSrc: lcThong,
+    //     },
+    // },
+    // ///////////////////////////////
+    // // #endregion                //
+    // // #region Festive Fuzzballs //
+    // ///////////////////////////////
+    // {
+    //     questionProps: {
+    //         headerText: "Which pets are these?",
+    //         imageSrc: ccJerryQ,
+    //     },
+    //     answerProps: {
+    //         headerText: "It's Jerry and Daisy!",
+    //         imageSrc: ccJerry,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Which pet is this?",
+    //         imageSrc: ccMizukiQ,
+    //     },
+    //     answerProps: {
+    //         headerText: "It's Mizuki!",
+    //         imageSrc: ccMizuki,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Which pet is this?",
+    //         imageSrc: ccFenQ,
+    //     },
+    //     answerProps: {
+    //         headerText: "It's Fennel!",
+    //         imageSrc: ccFen,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Which pet is this?",
+    //         imageSrc: ccBalooQ,
+    //     },
+    //     answerProps: {
+    //         headerText: "It's Baloo!",
+    //         imageSrc: ccBaloo,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Which pet is this?",
+    //         imageSrc: ccCloverQ,
+    //     },
+    //     answerProps: {
+    //         headerText: "It's Clover!",
+    //         imageSrc: ccClover,
+    //     },
+    // },
+    // /////////////////////////
+    // // #endregion          //
+    // // #region Tanya, why? //
+    // /////////////////////////
+    // {
+    //     questionProps: {
+    //         headerText: "Tanya, why did you say?",
+    //         imageSrc: wtChicken,
+    //     },
+    //     answerProps: {
+    //         headerText: "Sef mentioned the rising cost of eggs.",
+    //         imageSrc: wtChickenA,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Tanya, why did you say?",
+    //         imageSrc: wtWisdom,
+    //     },
+    //     answerProps: {
+    //         headerText:
+    //             "Kuro asked Tanya if her wisdom tooth extraction was routine.",
+    //         bodyText:
+    //             "The conversation topic started with some doctors being bad doctors, especially when prescribing pain medication.",
+    //         imageSrc: wtWisdomA,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Tanya, why did you say?",
+    //         imageSrc: wtGrape,
+    //     },
+    //     answerProps: {
+    //         headerText:
+    //             "Jade mentioned that she had Alex participate in the tradition of eating 12 grapes under a table in one minute at midnight for good luck.",
+    //         bodyText: "The conversation topic was New Years traditions",
+    //         imageSrc: wtGrapeA,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Tanya, why did you say?",
+    //         imageSrc: wtItalians,
+    //     },
+    //     answerProps: {
+    //         headerText:
+    //             "Zuzu said that having a glass of wine with dinner was casual alcoholism",
+    //         bodyText:
+    //             'The conversation topic was about what being "Sober Curious" is.',
+    //         imageSrc: wtItaliansA,
+    //     },
+    // },
+    // {
+    //     questionProps: {
+    //         headerText: "Tanya, why did you say?",
+    //         imageSrc: wtBanana,
+    //     },
+    //     answerProps: {
+    //         headerText:
+    //             'Ryan said: "You would need to consume 20 millions bananas to die from radiation"',
+    //         bodyText:
+    //             "The conversation topic was radiation poisoning from various sources.",
+    //         imageSrc: wtBananaA,
+    //     },
+    // },
+    /////////////////////////
+    // #endregion          //
+    // #region Roast Beast //
+    /////////////////////////
     {
         questionProps: {
-            headerText: "Which pets are these?",
-            imageSrc: ccJerryQ,
-        },
-        answerProps: {
-            headerText: "It's Jerry and Daisy!",
-            imageSrc: ccJerry,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Which pet is this?",
-            imageSrc: ccMizukiQ,
-        },
-        answerProps: {
-            headerText: "It's Mizuki!",
-            imageSrc: ccMizuki,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Which pet is this?",
-            imageSrc: ccFenQ,
-        },
-        answerProps: {
-            headerText: "It's Fennel!",
-            imageSrc: ccFen,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Which pet is this?",
-            imageSrc: ccBalooQ,
-        },
-        answerProps: {
-            headerText: "It's Baloo!",
-            imageSrc: ccBaloo,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Which pet is this?",
-            imageSrc: ccCloverQ,
-        },
-        answerProps: {
-            headerText: "It's Clover!",
-            imageSrc: ccClover,
-        },
-    },
-    ////////////////////////////
-    // #endregion             //
-    // #region Last Christmas //
-    ////////////////////////////
-    {
-        questionProps: {
-            headerText: "Last Christmas, who said this quote?",
-            bodyText: "Small penis manly",
-        },
-        answerProps: {
-            headerText: "Zuzu",
+            headerText: "Where is Feuerzangenbowle from?",
             bodyText:
-                "In response to an article Tanya linked about why penises in older paintings are so small",
-            imageSrc: lcPP,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Last Christmas, who said this quote?",
-            bodyText: "$820 Apple chain. A chain to hold your apple.",
+                "Feuerzangenbowle is a traditional holiday drink, a flaming punch made from" +
+                " mulled wine with a rum-soaked sugarloaf set on fire and dripping caramelized" +
+                " sugar into the spiced red wine below. ",
+            imageSrc:
+                "https://www.thefooddictator.com/wp-content/uploads/2019/12/Feuerzangenbowle.jpg",
         },
         answerProps: {
-            headerText: "Ghost",
+            headerText: "Germany",
             bodyText:
-                "After posting a link to a $820 chain to hold your apple.",
-            imageSrc: lcApple,
+                'The name translates to "fire-tongs punch,"' +
+                " referring to the tongs used to hold the sugarloaf over the bowl.",
+            videoSrc:
+                "https://www.youtube.com/embed/32vXvV6t4w8?si=HD7thxjLhnOmyILq",
         },
     },
     {
         questionProps: {
-            headerText: "Last Christmas, who said this quote?",
-            bodyText: "magical chihuahua",
-        },
-        answerProps: {
-            headerText: "Melinda",
+            headerText: "Where is eating KFC on Christmas a tradition?",
             bodyText:
-                "In a conversation about the kinds of pets brought to Hogwarts",
-            imageSrc: lcChihuahua,
+                ' In 1974, "Kentucky for Christmas" filled a void for a festive, convenient' +
+                " holiday meal in this country; especially since turkey wasn't traditional" +
+                " and ovens were rare, making fried chicken a perfect substitute.",
+            imageSrc:
+                "https://i0.wp.com/www.resilientworker.net/wp-content/uploads/2020/08/SantaColonel-2.jpg?fit=1074%2C1733&ssl=1",
+        },
+        answerProps: {
+            headerText: "Japan",
+            bodyText:
+                "Its rapid adoption led to the nationwide tradition of" +
+                " pre-ordering special Christmas buckets, complete with cake and" +
+                " shrimp, over a month in advance each holiday season.",
+            videoSrc:
+                "https://www.youtube.com/embed/KyYkQDO7v3A?si=mOoOdVdRxn6X0SCd",
         },
     },
     {
         questionProps: {
-            headerText: "Last Christmas, who said this quote?",
-            bodyText: "why are santa and mrs. claus different poop types",
+            headerText: "Where is Pozole from?",
+            bodyText:
+                "Pozole is a traditional, hearty soup or stew made with hominy and meat (typically pork or chicken).",
+            imageSrc:
+                "https://hips.hearstapps.com/hmg-prod/images/pozole-index-655b86b9eeb3f.jpg?crop=0.889xw:1.00xh;0.0561xw,0",
         },
         answerProps: {
-            headerText: "Kuro",
-            bodyText: "In response to Zuzu posting a very weird picture.",
-            imageSrc: lcPoo,
+            headerText: "Mexico",
+            imageSrc:
+                "https://static.vecteezy.com/system/resources/previews/016/453/283/non_2x/mexican-traditional-food-pozole-illustration-in-hand-drawn-style-vector.jpg",
         },
     },
     {
         questionProps: {
-            headerText: "Last Christmas, who said this quote?",
-            bodyText: "Wrong Thong is my new drag name",
+            headerText: "Where is Sufganiyah from?",
+            bodyText:
+                "Sufganiyah is a round, deep-fried, jelly-filled doughnut." +
+                " These pillowy desserts are made from a yeasted dough, fried in oil, injected with jam" +
+                " (traditionally raspberry) and dusted with powdered sugar. ",
+            imageSrc:
+                "https://www.onceuponachef.com/images/2018/11/Sufganiyot.jpg",
         },
         answerProps: {
-            headerText: "Sef",
-            bodyText: "In response to a review about a St. Clair Bingo",
-            imageSrc: lcThong,
+            headerText: "Israel",
+            bodyText:
+                "The oil used to fry the dough symbolizes the miracle of the oil",
+            imageSrc:
+                "https://www.shutterstock.com/shutterstock/photos/2381806665/display_1500/stock-photo-experience-hanukkah-s-beauty-with-top-view-vertical-image-of-sufganiyot-utensils-star-of-david-2381806665.jpg",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Where are Kulkuls from?",
+            bodyText:
+                "Kulkuls (also known as kalkals, kidyo, or kormolas) are a traditional," +
+                " deep-fried Christmas-time sweet. These are small, bite-sized pieces of" +
+                " sweetened dough, shaped into curls or shells and often coated in a sugar glaze.",
+            imageSrc:
+                "https://food-dee-dum.com/wp-content/uploads/2014/12/Food-Dee-Dum-Kulkuls-Recipe-26.jpg",
+        },
+        answerProps: {
+            headerText: "India",
+            videoSrc:
+                "https://www.youtube.com/embed/Zdu0eOhV09Y?si=X6JHcZcqgu9Nfv-R",
+            isMuted: true,
+        },
+    },
+    ///////////////////////////
+    // #endregion            //
+    // #region Holiday Cameo //
+    ///////////////////////////
+    {
+        questionProps: {
+            headerText: "Name the movie",
+            imageSrc:
+                "https://www.milwaukeeindependent.com/wp-content/uploads/2021/12/122221_DieHardXMas_01.jpg",
+        },
+        answerProps: {
+            headerText: "Die Hard",
+            bodyText: "Yippee-ki-yay",
+            videoSrc:
+                "https://www.youtube.com/embed/gYWvwkXreaI?si=8l5SuEAruumA3w0H",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name the movie",
+            imageSrc: "https://i.imgur.com/qwtCcPp.png",
+        },
+        answerProps: {
+            headerText: "Toy Story",
+            videoSrc:
+                "https://www.youtube.com/embed/DUDqONSkp2I?si=OnIPRql0P6zI-Nj5",
+            startTime: 6,
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name the movie",
+            imageSrc:
+                "https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/11/Shane-Black-Christmas-Iron-Man-3.jpg",
+        },
+        answerProps: {
+            headerText: "Iron Man 3",
+            videoSrc:
+                "https://www.youtube.com/embed/PXiUJEiLmJQ?si=mr7yg656qneEZ8_Z",
+            startTime: 178,
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name the movie",
+            imageSrc:
+                "https://qudahalloween.com/cdn/shop/articles/Mean-Girls-Christmas-costume-featured_600x.jpg?v=1719395859",
+        },
+        answerProps: {
+            headerText: "Mean Girls",
+            videoSrc:
+                "https://www.youtube.com/embed/oDU84nmSDZY?si=J-2ZzJFZ_rq1-NQ7",
+            startTime: 61,
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name the movie",
+            imageSrc:
+                "https://s26162.pcdn.co/wp-content/uploads/sites/3/2019/12/Godfather-xmas-present-shopping.jpg",
+        },
+        answerProps: {
+            headerText: "The Godfather",
+            videoSrc:
+                "https://www.youtube.com/embed/5jHmqhoBAu8?si=C_vJ5n5dbaOlj_dS",
+            startTime: 11,
+        },
+    },
+    /////////////////////////////////
+    // #endregion                  //
+    // #region Christmas in Review //
+    /////////////////////////////////
+    {
+        questionProps: {
+            headerText: "What movie are they reviewing?",
+            imageSrc: "https://i.imgur.com/aVyD2Ob.png",
+        },
+        answerProps: {
+            headerText: "The Polar Express",
+            imageSrc: "https://i.imgur.com/poD5Tfk.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "What movie are they reviewing?",
+            imageSrc: "https://i.imgur.com/1W6LHbi.png",
+        },
+        answerProps: {
+            headerText: "A Christmas Story",
+            imageSrc: "https://i.imgur.com/dN3SSXT.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "What movie are they reviewing?",
+            imageSrc: "https://i.imgur.com/zGV3hqH.png",
+        },
+        answerProps: {
+            headerText: "The Muppet Christmas Carol",
+            imageSrc: "https://i.imgur.com/YfMRjQi.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "What movie are they reviewing?",
+            imageSrc: "https://i.imgur.com/iuLNwFU.png",
+        },
+        answerProps: {
+            headerText: "Home Alone",
+            imageSrc: "https://i.imgur.com/ZRUn00M.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "What movie are they reviewing?",
+            imageSrc: "https://i.imgur.com/clZbNbL.png",
+        },
+        answerProps: {
+            headerText: "A Christmas Prince",
+            videoSrc:
+                "https://www.youtube.com/embed/BsHT1fYouYU?si=wrU6SCbZ8Bzevlvw",
+            startTime: 43,
         },
     },
     /////////////////////////////////////
@@ -235,7 +474,7 @@ export const christmas2025Cards = [
         answerProps: {
             headerText: "Hark the Harold Angels Sing",
             bodyText:
-                "The guy on the right is Harold.  I gave him a name tag but it's hard to write with your left hand.",
+                "The guy on the left is Harold.  I gave him a name tag but it's hard to write with your left hand.",
             imageSrc: scHtHAS,
         },
     },
@@ -268,158 +507,83 @@ export const christmas2025Cards = [
         answerProps: {
             headerText: "Santa Clause is Coming to Town",
             bodyText:
-                "You better not pout. You better not cry.  You better not shout.  I'm telling you why.",
+                "You better not pout. You better not cry.  You better not shout.  I'm telling you why. (I messed up the lyrics lol)",
             imageSrc: scYBNPYBNCYBNSITYW,
         },
     },
-    /////////////////////////
-    // #endregion          //
-    // #region Tanya, why? //
-    /////////////////////////
+    ////////////////////////////
+    // #endregion             //
+    // #region Match That Fit //
+    ////////////////////////////
     {
         questionProps: {
-            headerText: "Tanya, why did you say?",
-            imageSrc: wtChicken,
-        },
-        answerProps: {
-            headerText: "Sef mentioned the rising cost of eggs.",
-            imageSrc: wtChickenA,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Tanya, why did you say?",
-            imageSrc: wtWisdom,
-        },
-        answerProps: {
-            headerText:
-                "Kuro asked Tanya if her wisdom tooth extraction was routine.",
+            headerText: "Match That Fit: $2475",
             bodyText:
-                "The conversation topic started with some doctors being bad doctors, especially when prescribing pain medication.",
-            imageSrc: wtWisdomA,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Tanya, why did you say?",
-            imageSrc: wtGrape,
+                "Ralph Lauren Men's Cable-Knit Cashmere Sweater $1000, KHAITE Manhattan Leather Belt with Gold Buckle $580, David Koma Faux Fur Neck Scarf $453, Inspire Chic Single Breasted Mid Length Coat $220, WarriorStockade Leather Poulaines Shoes $135, Fiercepulse Men's Sunshine Yellow Leggings $90",
+            imageSrc: "https://i.imgur.com/7E3tMEj.png",
         },
         answerProps: {
-            headerText:
-                "Jade mentioned that she had Alex participate in the tradition of eating 12 grapes under a table in one minute at midnight for good luck.",
-            bodyText: "The conversation topic was New Years traditions",
-            imageSrc: wtGrapeA,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Tanya, why did you say?",
-            imageSrc: wtItalians,
-        },
-        answerProps: {
-            headerText:
-                "Zuzu said that having a glass of wine with dinner was casual alcoholism",
-            bodyText:
-                'The conversation topic was about what being "Sober Curious" is.',
-            imageSrc: wtItaliansA,
-        },
-    },
-    {
-        questionProps: {
-            headerText: "Tanya, why did you say?",
-            imageSrc: wtBanana,
-        },
-        answerProps: {
-            headerText:
-                'Ryan said: "You would need to consume 20 millions bananas to die from radiation"',
-            bodyText:
-                "The conversation topic was radiation poisoning from various sources.",
-            imageSrc: wtBananaA,
-        },
-    },
-    ///////////////////////////////
-    // #endregion                //
-    // #region Stocking Stumpers //
-    ///////////////////////////////
-    {
-        questionProps: {
-            headerText: "Solve the Riddle",
-            bodyText:
-                "In collars, ribbons, and skirts I dress. While standing still, I make a mess. I've a hat akin to specks in the sky. I'll add a twinkle to your eye.",
-        }, //I feed myself 'till the holiday season. Then I'm headed inside for a festive reason.
-        answerProps: {
-            headerText: "A Christmas Fir",
+            headerText: "Buddy the Elf",
             imageSrc:
-                "https://assets.wfcdn.com/im/43772517/resize-h755-w755%5Ecompr-r85/2589/258926631/Artificial+Christmas+Tree+with+LED+Lights%2C+Ornament+Balls%2C+Tree+Top+Star%2C+Tree+Skirt+Set.jpg",
+                "https://www.newsnationnow.com/wp-content/uploads/sites/108/2021/12/AP0310310354.jpg?w=876&h=493&crop=1",
         },
     },
     {
         questionProps: {
-            headerText: "Solve the Riddle",
+            headerText: "Match That Fit: $1920",
             bodyText:
-                "Move me and I become the devil. I operate on a world wide level. My mantra, I recite in threes. Beware I have my eye on thee.",
+                "Baturina Homewear Quilted Velvet Dressing Gown $860, Prada Silk and Cashmere Scarf $750, Hand crafted ceramic candle holder $160, Falke No. 4 Pure Silk Men Socks $100, Victorian Tassel Night Cap $50",
+            imageSrc: "https://i.imgur.com/eShN3Pw.png",
         },
         answerProps: {
-            headerText: "Santa",
-            bodyText:
-                "Contrary to popular belief, 1930s Coca-Cola advertisements weren't the progenitor of a plump and jolly Santa dressed in red.  Instead, it was the cartoons and advertisements of Thomas Nast who spread this depiction of Father Christmas for decades starting in 1863.",
+            headerText: "Ebeneezer Scrooge",
             imageSrc:
-                "https://the-public-domain-review.imgix.net/collections/a-pictorial-history-of-santa-claus/800px-Santa_Claus_Sugar_Plums2C_1868.png?fit=max&w=1200&h=850",
+                "https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-a7h68z_6e1ef720.jpeg",
         },
     },
     {
         questionProps: {
-            headerText: "Solve the Riddle",
+            headerText: "Match That Fit: $2325",
             bodyText:
-                "Rarely by skill this thing is wrought, as, most often, it is bought. Sometimes a cube. Sometimes with a knot. Forever a secret this is not.",
-        }, //Rarely by skill this thing is wrought, as, most often, it is bought.
+                "Brioni Men's Journey Flat-Front Pleated Trousers $1370, Supreme Chalk Logo Sweatshirt $320, Handsome Stockholm Statement Perforated Blue Gloves $250, Portolando Ministripe Rib Scarf $140, Julys Felt Elf Shoes $105, GO-A-HAT Wide Brim Boater Hat $40",
+            imageSrc: "https://i.imgur.com/z2abLYu.png",
+        },
         answerProps: {
-            headerText: "A present",
+            headerText: "Mr. Snow Miser",
             imageSrc:
-                "https://media.istockphoto.com/id/1356160396/photo/group-of-different-christmas-gift-boxes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=B6_-qOiVisWF0akpfi0CuSjHkXNKaJlxd3KIhKCwzeU=",
+                "https://images.genius.com/2cb09faa19759b87f1425390ca31ce7d.480x352x68.gif",
         },
     },
     {
         questionProps: {
-            headerText: "Solve the Riddle",
+            headerText: "Match That Fit: $5405",
             bodyText:
-                "“There is no armor I can't crack!” is this warrior's dictum. You prep a target from the sack, gifting it's next victim. The more its fed, the more you feast: Kernels, not of wisdom",
+                "Lord and Taylor Cotton Bomber Jacket $2875, Brunello Cucinelli Corduroy trousers $1300, Marsèll Mando Walnut Leather Derby Shoes $1100, Sigmund Genuine Leather Fatigue Cap $130",
+            imageSrc: "https://i.imgur.com/2r8NIpn.png",
         },
         answerProps: {
-            headerText: "A Nutcracker",
+            headerText: "Charlie Brown",
             imageSrc:
-                "https://media0.giphy.com/media/M6IEvYZGDQs1sPEBnV/200w.gif?cid=6c09b952c4eouqxh3x93opac9hl1d9v2zn0czb8afjqo9o78&ep=v1_gifs_search&rid=200w.gif&ct=g",
+                "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3092x2067+0+0/resize/800/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F81%2F67%2Fd369e89a469e89328d1737edfb24%2F092524-apple-peanuts-special-holiday-season-big-image-03.jpg",
         },
     },
     {
         questionProps: {
-            headerText: "Solve the Riddle",
+            headerText: "Match That Fit: $4235",
             bodyText:
-                "Often used for art and eating; but on its own it's something fleeting. It falls for miles without breaks. When held tightly, a weapon it makes. If its quick march continues steadily, then take heed, for it is deadly.",
+                "Leather Kloset Fox Fur Bomber Jacket $3600, BBeards Men's Gothic Vampire Wig $545, Dental Distortions Pennywise FX Fangs $50, Endura Blue Body Paint $45",
+            imageSrc: "https://i.imgur.com/kvVHoZl.png",
         },
         answerProps: {
-            headerText: "Snow",
+            headerText: "The Yeti",
             imageSrc:
-                "https://www.sltrib.com/resizer/COf2BSjajW8LKnB8wkyb7qnzWFA=/arc-anglerfish-arc2-prod-sltrib/public/W4MIEOALEZFIFMY6Y5K2CLSEUA.JPG",
+                "https://i.pinimg.com/736x/25/2d/f2/252df2f12502b00aecc9a5b2cb56de50.jpg",
         },
     },
     /////////////////////////////////
     // #endregion                  //
     // #region Mini Merry Melodies //
     /////////////////////////////////
-    {
-        questionProps: {
-            headerText: "Name that tune!",
-            audioSrc: mmmDDD,
-        },
-        answerProps: {
-            headerText: "Dreidel, Dreidel, Dreidel",
-            bodyText: "Mikhl Gelbart",
-            videoSrc:
-                "https://www.youtube.com/embed/26GnFJm04AE?si=MObc_S_BYnFtIKA_",
-            startTime: 5,
-        },
-    },
     {
         questionProps: {
             headerText: "Name that tune!",
@@ -431,6 +595,19 @@ export const christmas2025Cards = [
             videoSrc:
                 "https://www.youtube.com/embed/AN_R4pR1hck?si=PWAMBGJg3BR1PUwb",
             startTime: 88,
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name that tune!",
+            audioSrc: mmmDDD,
+        },
+        answerProps: {
+            headerText: "Dreidel, Dreidel, Dreidel",
+            bodyText: "Mikhl Gelbart",
+            videoSrc:
+                "https://www.youtube.com/embed/26GnFJm04AE?si=MObc_S_BYnFtIKA_",
+            startTime: 5,
         },
     },
     {
@@ -472,6 +649,9 @@ export const christmas2025Cards = [
             startTime: 41,
         },
     },
+    ////////////////
+    // #endregion //
+    ////////////////
 ];
 
 export default christmas2025Cards;

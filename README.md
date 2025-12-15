@@ -54,3 +54,4 @@ Here's the step by step guide to hosting
 
 -   If you accidentally grey-out a card that shouldn't be greyed (not sure how you'd do this), you can right click it to toggle its state
 -   If you forgot to add points to someone's score, you can still do it from the Category Selection screen, BUT NOT IF YOU CLICK A QUESTION WITH A DIFFERENT POINT VALUE
+-   If you tried to add a question with a YouTube video link, remember that you CANNOT use the normal link. You have to click "Share" on YouTube and select the "Embedded" option to get the proper link.
