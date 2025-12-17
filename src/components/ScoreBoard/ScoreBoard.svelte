@@ -1,5 +1,6 @@
 <script>
-  import { onMount } from "svelte";
+    import { onMount } from "svelte";
+    import { players, socket } from "$lib/store";
 
     // @ts-nocheck
     import PlayerCard from "./PlayerCard.svelte";
@@ -8,52 +9,79 @@
     let isFormOn = false;
     let name = "";
     /**
-     * @type {string[]}
-     */
-    let players = [];
-    /**
      * Adds a new jeopardy podium for this player
      */
     const addPlayer = () => {
-        players = [...players, name];
-        console.log(name)
+        console.log(`Adding ${name}`);
+        socket.emit("client_adds_player", name, () => {
+            console.log(`Successfully added player`);
+        });
         name = "";
-    }
+    };
 
-onMount(()=>{
-    console.log("WELCOME! To get started, you'll want to press the Escape key on your keyboard and type some names to add people to the scoreboard. Don't forget to free up some room by hitting escape again!")
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            isFormOn = !isFormOn;
-            setTimeout(()=>{document.getElementById('new_player_name')?.focus()}, 100);
-        }
+    const resetBuzzers = () => {
+        socket.emit("client_unbuzzes_all", () => {
+            console.log(`Unbuzzed all`);
+        });
+    };
+    const clearAllPlayers = () => {
+        name = "";
+        socket.emit("client_clears_players", () => {
+            console.log("No more players!");
+        });
+    };
+
+    socket.on("server_updates_players", (newPlayerState) => {
+        console.log("Server updated players to:", newPlayerState);
+        $players = newPlayerState;
     });
-    return document.removeEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            isFormOn = !isFormOn;
-            setTimeout(()=>{document.getElementById('new_player_name')?.focus()}, 100);
-        }
+
+    onMount(() => {
+        console.log(
+            "WELCOME! To get started, you'll want to press the Escape key on your" +
+                " keyboard and type some names to add people to the scoreboard." +
+                " Don't forget to free up some room by hitting escape again!",
+        );
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                isFormOn = !isFormOn;
+                setTimeout(() => {
+                    document.getElementById("new_player_name")?.focus();
+                }, 100);
+            }
+        });
+        return document.removeEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                isFormOn = !isFormOn;
+                setTimeout(() => {
+                    document.getElementById("new_player_name")?.focus();
+                }, 100);
+            }
+        });
     });
-})
 </script>
 
 <!-- svelte-ignore missing-declaration -->
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <article>
-    {#each players as player}
+    {#each $players as player}
         <!-- Please keep names unique -->
-        <PlayerCard name={player} theme={theme}/>
+        <PlayerCard buzz={player?.buzz} name={player?.name} {theme} />
     {/each}
     {#if isFormOn}
-        <form on:submit|preventDefault={addPlayer}>
-            <input id="new_player_name" type="text" bind:value={name}/>
-            <button type="submit">+</button>
-        </form>
+        <menu class="player-control">
+            <form on:submit|preventDefault={addPlayer}>
+                <input id="new_player_name" type="text" bind:value={name} />
+                <button type="submit">+</button>
+            </form>
+            <button on:click={clearAllPlayers}>🧹</button>
+        </menu>
     {/if}
+    <button class="reset-button" on:click={resetBuzzers}>Reset Buzzers</button>
 </article>
 
 <style>
-    article{
+    article {
         min-width: fit-content;
         width: 100%;
         min-height: 150px;
@@ -66,28 +94,43 @@ onMount(()=>{
         z-index: 5;
     }
 
-    form{
+    form {
         z-index: 5;
-        
+
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
 
-    button{
+    button {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 0px 15px;
+        padding: 0px 16px;
 
         /* color */
         color: white;
-        background-color: #79463A;
+        background-color: #79463a;
         border: 1px solid black;
         /* text */
         line-height: 1rem;
         /* border */
         border-radius: 6px;
+    }
+    .reset-button {
+        background-color: white;
+        color: #97c1e6;
+        position: fixed;
+        width: min-content;
+        right: 20px;
+        top: 20px;
+        padding: 4px 16px;
+    }
+
+    .player-control {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
     }
 </style>

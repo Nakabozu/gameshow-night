@@ -1,5 +1,7 @@
 <script>
+    // #region IMPORTS
     import { onMount } from "svelte";
+    import {} from "$lib/store";
     // Components
     import JeopardyBoard from "../components/JeopardyBoard/JeopardyBoard.svelte";
     import ScoreBoard from "../components/ScoreBoard/ScoreBoard.svelte";
@@ -20,13 +22,13 @@
     // Themes
     import winterTheme from "$lib/themes/winter/config";
     // State
-    import { ansiR, dailyDoubleIndex, mT } from "$lib/store";
-
-    //#region SETTINGS
+    import { ansiR, dailyDoubleIndex, mT, players, socket } from "$lib/store";
+    // #endregion
+    // #region SETTINGS
     const currentTopic = christmas2025Topics;
     const currentCards = christmas2025Cards;
     const theme = winterTheme;
-    //#endregion
+    // #endregion
 
     /**
      * Checks to see if the string starts with http or ends in one of the file extensions I use in the /lib/images folder
@@ -75,6 +77,16 @@
 
     onMount(() => {
         $dailyDoubleIndex = Math.floor(Math.random() * currentCards.length);
+    });
+
+    // @ts-ignore
+    socket.on("connect", () => {
+        console.log("YOU CONNECTED TO THE FRONTEND! :D");
+    });
+
+    socket.on("welcome", (initialPlayers) => {
+        console.log("Server said welcome!", initialPlayers);
+        $players = initialPlayers;
     });
 </script>
 

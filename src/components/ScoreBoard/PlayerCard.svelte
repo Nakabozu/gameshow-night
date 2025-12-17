@@ -1,52 +1,68 @@
 <script>
-    import podium from '$lib/images/JeopardyPodium.png';
-    import { lastCardsScore } from '$lib/store';
+    import podium from "$lib/images/JeopardyPodium.png";
+    import { lastCardsScore } from "$lib/store";
 
     export let name = "";
+    export let buzz = 0;
     export let theme;
     let score = 0;
     let isScoreUpdaterOpen = false;
     let isNegative = false;
     const scoreUpdateOptions = [0, 200, 400, 600, 800, 1000];
     const podiumHeight = theme?.podium?.height ? theme?.podium?.height : 125;
-
 </script>
 
 <section class="player-card-container">
-    <div role="menu" popover="auto" id={`scoreboard-${name}`} class="scoreboard-popover-container" style='--name-of-anchor: --anchor-{name};'>
+    {#if buzz > 0}
+        <div class="buzz-order">{buzz}</div>
+    {/if}
+    <div
+        role="menu"
+        popover="auto"
+        id={`scoreboard-${name}`}
+        class="scoreboard-popover-container"
+        style="--name-of-anchor: --anchor-{name};"
+    >
         <div class="scoreboard-popover-content">
             {#each scoreUpdateOptions as scoreUpdate}
-                <button on:click={() => {
-                    if(isNegative)
-                        score -= scoreUpdate;
-                    else
-                        score += scoreUpdate;
-                    isScoreUpdaterOpen = false;
-                }}>{scoreUpdate}</button>
+                <button
+                    on:click={() => {
+                        if (isNegative) score -= scoreUpdate;
+                        else score += scoreUpdate;
+                        isScoreUpdaterOpen = false;
+                    }}>{scoreUpdate}</button
+                >
             {/each}
         </div>
     </div>
 
-    <section class="score-wrapper" style='--score-offset-top: {theme?.podium?.scoreOffsetTop}px'>
-        <div class="name" style='--name-of-anchor: --anchor-{name};'>
+    <section
+        class="score-wrapper"
+        style="--score-offset-top: {theme?.podium?.scoreOffsetTop}px"
+    >
+        <div class="name" style="--name-of-anchor: --anchor-{name};">
             {name}
         </div>
         <div>
             {score}
         </div>
         <span>
-            <button on:click={() => {
-                // isNegative = true;
-                // isScoreUpdaterOpen = true;
-                score = score - $lastCardsScore;
-            }}>
+            <button
+                on:click={() => {
+                    // isNegative = true;
+                    // isScoreUpdaterOpen = true;
+                    score = score - $lastCardsScore;
+                }}
+            >
                 -
             </button>
-            <button on:click={() => {
-                // isNegative = false;
-                // isScoreUpdaterOpen = true;
-                score = score + $lastCardsScore;
-            }}>
+            <button
+                on:click={() => {
+                    // isNegative = false;
+                    // isScoreUpdaterOpen = true;
+                    score = score + $lastCardsScore;
+                }}
+            >
                 +
             </button>
         </span>
@@ -54,18 +70,32 @@
 
     <span class="podium">
         <picture>
-            <source srcset={theme?.podium?.src ? theme?.podium?.src : podium} type="image/png" height={podiumHeight}/>
+            <source
+                srcset={theme?.podium?.src ? theme?.podium?.src : podium}
+                type="image/png"
+                height={podiumHeight}
+            />
             <img src={podium} alt="Podium" />
         </picture>
     </span>
 </section>
 
 <style>
-    .player-card-container{
+    .buzz-order {
+        position: absolute;
+        z-index: 10;
+        color: red;
+        font-family: monospace;
+        left: calc(50% - 5px);
+        top: -10px;
+        font-size: xx-large;
+    }
+
+    .player-card-container {
         position: relative;
     }
 
-    .score-wrapper{
+    .score-wrapper {
         position: absolute;
         top: var(--score-offset-top);
         display: flex;
@@ -74,13 +104,13 @@
         z-index: 4;
     }
 
-    .name{
+    .name {
         anchor-name: var(--name-of-anchor);
 
         margin-bottom: 20px;
     }
 
-    .score-wrapper button{
+    .score-wrapper button {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -90,7 +120,7 @@
 
         /* color */
         color: white;
-        background-color: #79463A;
+        background-color: #79463a;
         border: 1px solid black;
         /* text */
         line-height: 1rem;
@@ -98,22 +128,22 @@
         border-radius: 6px;
     }
 
-    .podium{
+    .podium {
         position: relative;
         z-index: 3;
     }
 
-    .podium picture{
+    .podium picture {
         aspect-ratio: 1 / 1;
     }
 
-    div{
+    div {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    
-    .scoreboard-popover-container{
+
+    .scoreboard-popover-container {
         position-anchor: var(--name-of-anchor);
         bottom: anchor(top);
         right: anchor(right);
@@ -124,14 +154,14 @@
         border-radius: 6px;
     }
 
-    .scoreboard-popover-content{
+    .scoreboard-popover-content {
         display: flex;
         justify-content: space-evenly;
         gap: 30px;
         font-size: 2rem;
     }
 
-    .score-wrapper span{
+    .score-wrapper span {
         display: flex;
         flex-direction: row;
         gap: 6px;

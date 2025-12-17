@@ -1,37 +1,3 @@
-// Christmas Pet Questions
-import ccBalooQ from "$lib/images/Christmas2025/Christmas_Cat_Baloo_Question.png";
-import ccBaloo from "$lib/images/Christmas2025/Christmas_Cat_Baloo.jpg";
-import ccCloverQ from "$lib/images/Christmas2025/Christmas_Cat_Clover_Question.png";
-import ccClover from "$lib/images/Christmas2025/Christmas_Cat_Clover.jpg";
-import ccFenQ from "$lib/images/Christmas2025/Christmas_Cat_Fen_Question.png";
-import ccFen from "$lib/images/Christmas2025/Christmas_Cat_Fen.jpg";
-import ccJerryQ from "$lib/images/Christmas2025/Christmas_Cat_Jerry_Question.png";
-import ccJerry from "$lib/images/Christmas2025/Christmas_Cat_Jerry.jpg";
-import ccMizukiQ from "$lib/images/Christmas2025/Christmas_Cat_Mizuki_Question.png";
-import ccMizuki from "$lib/images/Christmas2025/Christmas_Cat_Mizuki.jpg";
-// Last Christmas Questions
-import lcApple from "$lib/images/Christmas2025/Last_Christmas_Ghost_Apple_Chain.png";
-import lcPoo from "$lib/images/Christmas2025/Last_Christmas_Kuro_Poo.png";
-import lcChihuahua from "$lib/images/Christmas2025/Last_Christmas_Melinda_Magical_Chihuahua.png";
-import lcThong from "$lib/images/Christmas2025/Last_Christmas_Sef_Wrong_Thong.png";
-import lcPP from "$lib/images/Christmas2025/Last_Christmas_Zuzu_Small_PP.png";
-// Sketchy Christmas Questions
-import scHtHAS from "$lib/images/Christmas2025/Sketchy_Christmas_HtHAS.png";
-import scJBJBJBR from "$lib/images/Christmas2025/Sketchy_Christmas_JBJBJBR.png";
-import scLC from "$lib/images/Christmas2025/Sketchy_Christmas_LC.png";
-import scWaCCPaaBNaTEMOoC from "$lib/images/Christmas2025/Sketchy_Christmas_WaCCPaaBNaTEMOoC.png";
-import scYBNPYBNCYBNSITYW from "$lib/images/Christmas2025/Sketchy_Christmas_YBNPYBNCYBNSITYW.png";
-// Why Tanya Questions
-import wtItalians from "$lib/images/Christmas2025/Tanya_Quote_Attack_On_Italians.png";
-import wtItaliansA from "$lib/images/Christmas2025/Tanya_Quote_Attack_On_Italians_Answer.png";
-import wtBanana from "$lib/images/Christmas2025/Tanya_Quote_Banana_Death.png";
-import wtBananaA from "$lib/images/Christmas2025/Tanya_Quote_Banana_Death_Answer.png";
-import wtChicken from "$lib/images/Christmas2025/Tanya_Quote_Chickens.png";
-import wtChickenA from "$lib/images/Christmas2025/Tanya_Quote_Chickens_Answer.png";
-import wtGrape from "$lib/images/Christmas2025/Tanya_Quote_Grapes.png";
-import wtGrapeA from "$lib/images/Christmas2025/Tanya_Quote_Grapes_Answer.png";
-import wtWisdom from "$lib/images/Christmas2025/Tanya_Quote_Wisdom.png";
-import wtWisdomA from "$lib/images/Christmas2025/Tanya_Quote_Wisdom_Answer.png";
 // Mini Merry Melodies
 import mmmDDD from "$lib/audio/Christmas2025/Mini_Dreidel.mp3";
 import mmmFN from "$lib/audio/Christmas2025/Mini_Feliz_Navidad.mp3";
@@ -73,7 +39,7 @@ export const christmas2025Cards = [
     //         headerText: "Zuzu",
     //         bodyText:
     //             "In response to an article Tanya linked about why penises in older paintings are so small",
-    //         imageSrc: lcPP,
+    //         imageSrc: "https://i.imgur.com/4Hq7Kdg.png",
     //     },
     // },
     // {
@@ -85,7 +51,7 @@ export const christmas2025Cards = [
     //         headerText: "Ghost",
     //         bodyText:
     //             "After posting a link to a $820 chain to hold your apple.",
-    //         imageSrc: lcApple,
+    //         imageSrc: "https://i.imgur.com/XebLdwU.png",
     //     },
     // },
     // {
@@ -97,7 +63,7 @@ export const christmas2025Cards = [
     //         headerText: "Melinda",
     //         bodyText:
     //             "In a conversation about the kinds of pets brought to Hogwarts",
-    //         imageSrc: lcChihuahua,
+    //         imageSrc: "https://i.imgur.com/Q6odalZ.png",
     //     },
     // },
     // {
@@ -108,7 +74,7 @@ export const christmas2025Cards = [
     //     answerProps: {
     //         headerText: "Kuro",
     //         bodyText: "In response to Zuzu posting a very weird picture.",
-    //         imageSrc: lcPoo,
+    //         imageSrc: "https://i.imgur.com/kKtuEfk.png",
     //     },
     // },
     // {
@@ -119,7 +85,7 @@ export const christmas2025Cards = [
     //     answerProps: {
     //         headerText: "Sef",
     //         bodyText: "In response to a review about a St. Clair Bingo",
-    //         imageSrc: lcThong,
+    //         imageSrc: "https://i.imgur.com/79pk9Ez.png",
     //     },
     // },
     // ///////////////////////////////
@@ -129,51 +95,51 @@ export const christmas2025Cards = [
     // {
     //     questionProps: {
     //         headerText: "Which pets are these?",
-    //         imageSrc: ccJerryQ,
+    //         imageSrc: "https://i.imgur.com/TaoUylP.png",
     //     },
     //     answerProps: {
     //         headerText: "It's Jerry and Daisy!",
-    //         imageSrc: ccJerry,
+    //         imageSrc: "https://i.imgur.com/6JD2Tbj.jpeg",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Which pet is this?",
-    //         imageSrc: ccMizukiQ,
+    //         imageSrc: "https://i.imgur.com/M9SAmKV.png",
     //     },
     //     answerProps: {
     //         headerText: "It's Mizuki!",
-    //         imageSrc: ccMizuki,
+    //         imageSrc: "https://i.imgur.com/EbbBU4K.jpeg",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Which pet is this?",
-    //         imageSrc: ccFenQ,
+    //         imageSrc: "https://i.imgur.com/QbsP7FC.png",
     //     },
     //     answerProps: {
     //         headerText: "It's Fennel!",
-    //         imageSrc: ccFen,
+    //         imageSrc: "https://i.imgur.com/CKLS2y6.jpeg",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Which pet is this?",
-    //         imageSrc: ccBalooQ,
+    //         imageSrc: "https://i.imgur.com/uVTvVf8.png",
     //     },
     //     answerProps: {
     //         headerText: "It's Baloo!",
-    //         imageSrc: ccBaloo,
+    //         imageSrc: "https://i.imgur.com/28axmmx.jpeg",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Which pet is this?",
-    //         imageSrc: ccCloverQ,
+    //         imageSrc: "https://i.imgur.com/rbb5Tsi.jpeg",
     //     },
     //     answerProps: {
     //         headerText: "It's Clover!",
-    //         imageSrc: ccClover,
+    //         imageSrc: "https://i.imgur.com/ryhfSvi.jpeg",
     //     },
     // },
     // /////////////////////////
@@ -183,62 +149,62 @@ export const christmas2025Cards = [
     // {
     //     questionProps: {
     //         headerText: "Tanya, why did you say?",
-    //         imageSrc: wtChicken,
+    //         imageSrc: "https://i.imgur.com/iQnIO5y.png",
     //     },
     //     answerProps: {
     //         headerText: "Sef mentioned the rising cost of eggs.",
-    //         imageSrc: wtChickenA,
+    //         imageSrc: "https://i.imgur.com/cfQjvsg.png",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Tanya, why did you say?",
-    //         imageSrc: wtWisdom,
+    //         imageSrc: "https://i.imgur.com/Rw1aOHy.png",
     //     },
     //     answerProps: {
     //         headerText:
     //             "Kuro asked Tanya if her wisdom tooth extraction was routine.",
     //         bodyText:
     //             "The conversation topic started with some doctors being bad doctors, especially when prescribing pain medication.",
-    //         imageSrc: wtWisdomA,
+    //         imageSrc: "https://i.imgur.com/XihyQqF.png",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Tanya, why did you say?",
-    //         imageSrc: wtGrape,
+    //         imageSrc: "https://i.imgur.com/XZ8F9Mv.png",
     //     },
     //     answerProps: {
     //         headerText:
     //             "Jade mentioned that she had Alex participate in the tradition of eating 12 grapes under a table in one minute at midnight for good luck.",
     //         bodyText: "The conversation topic was New Years traditions",
-    //         imageSrc: wtGrapeA,
+    //         imageSrc: "https://i.imgur.com/M5JDuAL.png",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Tanya, why did you say?",
-    //         imageSrc: wtItalians,
+    //         imageSrc: "https://i.imgur.com/DBM3trV.png",
     //     },
     //     answerProps: {
     //         headerText:
     //             "Zuzu said that having a glass of wine with dinner was casual alcoholism",
     //         bodyText:
     //             'The conversation topic was about what being "Sober Curious" is.',
-    //         imageSrc: wtItaliansA,
+    //         imageSrc: "https://i.imgur.com/iKehFic.png",
     //     },
     // },
     // {
     //     questionProps: {
     //         headerText: "Tanya, why did you say?",
-    //         imageSrc: wtBanana,
+    //         imageSrc: "https://i.imgur.com/oOCIshI.png",
     //     },
     //     answerProps: {
     //         headerText:
     //             'Ryan said: "You would need to consume 20 millions bananas to die from radiation"',
     //         bodyText:
     //             "The conversation topic was radiation poisoning from various sources.",
-    //         imageSrc: wtBananaA,
+    //         imageSrc: "https://i.imgur.com/GIiXWmD.png",
     //     },
     // },
     /////////////////////////
@@ -340,8 +306,13 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "Name the movie",
-            imageSrc:
-                "https://www.milwaukeeindependent.com/wp-content/uploads/2021/12/122221_DieHardXMas_01.jpg",
+            zoomOutImageData: {
+                imageSrc:
+                    "https://www.milwaukeeindependent.com/wp-content/uploads/2021/12/122221_DieHardXMas_01.jpg",
+                startingX: 1450,
+                startingY: 300,
+                startingZoom: 515,
+            },
         },
         answerProps: {
             headerText: "Die Hard",
@@ -353,7 +324,12 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "Name the movie",
-            imageSrc: "https://i.imgur.com/qwtCcPp.png",
+            zoomOutImageData: {
+                imageSrc: "https://i.imgur.com/qwtCcPp.png",
+                startingX: 710,
+                startingY: 1625,
+                startingZoom: 450,
+            },
         },
         answerProps: {
             headerText: "Toy Story",
@@ -365,8 +341,13 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "Name the movie",
-            imageSrc:
-                "https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/11/Shane-Black-Christmas-Iron-Man-3.jpg",
+            zoomOutImageData: {
+                imageSrc:
+                    "https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/11/Shane-Black-Christmas-Iron-Man-3.jpg",
+                startingX: 1200,
+                startingY: 480,
+                startingZoom: 290,
+            },
         },
         answerProps: {
             headerText: "Iron Man 3",
@@ -378,8 +359,13 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "Name the movie",
-            imageSrc:
-                "https://qudahalloween.com/cdn/shop/articles/Mean-Girls-Christmas-costume-featured_600x.jpg?v=1719395859",
+            zoomOutImageData: {
+                imageSrc:
+                    "https://qudahalloween.com/cdn/shop/articles/Mean-Girls-Christmas-costume-featured_600x.jpg?v=1719395859",
+                startingY: 240,
+                startingX: 85,
+                startingZoom: 325,
+            },
         },
         answerProps: {
             headerText: "Mean Girls",
@@ -391,8 +377,13 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "Name the movie",
-            imageSrc:
-                "https://s26162.pcdn.co/wp-content/uploads/sites/3/2019/12/Godfather-xmas-present-shopping.jpg",
+            zoomOutImageData: {
+                imageSrc:
+                    "https://s26162.pcdn.co/wp-content/uploads/sites/3/2019/12/Godfather-xmas-present-shopping.jpg",
+                startingY: 830,
+                startingX: 1600,
+                startingZoom: 320,
+            },
         },
         answerProps: {
             headerText: "The Godfather",
@@ -408,16 +399,6 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "What movie are they reviewing?",
-            imageSrc: "https://i.imgur.com/aVyD2Ob.png",
-        },
-        answerProps: {
-            headerText: "The Polar Express",
-            imageSrc: "https://i.imgur.com/poD5Tfk.png",
-        },
-    },
-    {
-        questionProps: {
-            headerText: "What movie are they reviewing?",
             imageSrc: "https://i.imgur.com/1W6LHbi.png",
         },
         answerProps: {
@@ -428,21 +409,31 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "What movie are they reviewing?",
-            imageSrc: "https://i.imgur.com/zGV3hqH.png",
-        },
-        answerProps: {
-            headerText: "The Muppet Christmas Carol",
-            imageSrc: "https://i.imgur.com/YfMRjQi.png",
-        },
-    },
-    {
-        questionProps: {
-            headerText: "What movie are they reviewing?",
             imageSrc: "https://i.imgur.com/iuLNwFU.png",
         },
         answerProps: {
             headerText: "Home Alone",
             imageSrc: "https://i.imgur.com/ZRUn00M.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "What movie are they reviewing?",
+            imageSrc: "https://i.imgur.com/aVyD2Ob.png",
+        },
+        answerProps: {
+            headerText: "The Polar Express",
+            imageSrc: "https://i.imgur.com/poD5Tfk.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "What movie are they reviewing?",
+            imageSrc: "https://i.imgur.com/zGV3hqH.png",
+        },
+        answerProps: {
+            headerText: "The Muppet Christmas Carol",
+            imageSrc: "https://i.imgur.com/YfMRjQi.png",
         },
     },
     {
@@ -462,53 +453,63 @@ export const christmas2025Cards = [
     // #region Sketchy Christmas Songs //
     /////////////////////////////////////
     {
-        questionProps: { headerText: "Name The Lyrics", imageSrc: scJBJBJBR },
+        questionProps: {
+            headerText: "Name The Lyrics",
+            imageSrc: "https://i.imgur.com/pvctwV3.png",
+        },
         answerProps: {
             headerText: "Jingle Bell Rock",
-            bodyText: "Jingle Bell Jingle Bell Rock",
-            imageSrc: scJBJBJBR,
-        },
-    },
-    {
-        questionProps: { headerText: "Name The Lyrics", imageSrc: scHtHAS },
-        answerProps: {
-            headerText: "Hark the Harold Angels Sing",
-            bodyText:
-                "The guy on the left is Harold.  I gave him a name tag but it's hard to write with your left hand.",
-            imageSrc: scHtHAS,
-        },
-    },
-    {
-        questionProps: { headerText: "Name The Lyrics", imageSrc: scLC },
-        answerProps: {
-            headerText: "Last Christmas",
-            bodyText:
-                "Last Christmas I gave you my heart; but the very next day you gave it away.",
-            imageSrc: scLC,
+            bodyText: "Jingle Bell Jingle Bell Jingle Bell Rock",
+            imageSrc: "https://i.imgur.com/pvctwV3.png",
         },
     },
     {
         questionProps: {
             headerText: "Name The Lyrics",
-            imageSrc: scWaCCPaaBNaTEMOoC,
+            //imageSrc: "https://i.imgur.com/7MXuz5N.png",
+            imageSrc: "https://i.imgur.com/xrTYH0Q.png",
+        },
+        answerProps: {
+            headerText: "Hark! The Herald Angels Sing",
+            bodyText: "Hark! The Harold Angels Sing",
+            //imageSrc: "https://i.imgur.com/7MXuz5N.png",
+            imageSrc: "https://i.imgur.com/xrTYH0Q.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name The Lyrics",
+            imageSrc: "https://i.imgur.com/5gLutoC.png",
+        },
+        answerProps: {
+            headerText: "Last Christmas",
+            bodyText:
+                "Last Christmas I gave you my heart; but the very next day you gave it away.",
+            imageSrc: "https://i.imgur.com/5gLutoC.png",
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name The Lyrics",
+            imageSrc: "https://i.imgur.com/JLRmKlo.png",
         },
         answerProps: {
             headerText: "Frosty the Snowman",
             bodyText:
                 "With a corncob pipe and button nose and two eyes made out of coal.",
-            imageSrc: scWaCCPaaBNaTEMOoC,
+            imageSrc: "https://i.imgur.com/JLRmKlo.png",
         },
     },
     {
         questionProps: {
             headerText: "Name The Lyrics",
-            imageSrc: scYBNPYBNCYBNSITYW,
+            imageSrc: "https://i.imgur.com/yfAQu1E.png",
         },
         answerProps: {
-            headerText: "Santa Clause is Coming to Town",
+            headerText: "Santa Claus is Coming to Town",
             bodyText:
-                "You better not pout. You better not cry.  You better not shout.  I'm telling you why. (I messed up the lyrics lol)",
-            imageSrc: scYBNPYBNCYBNSITYW,
+                "You better watch out. You better not cry. You better not pout. I'm telling you why.",
+            imageSrc: "https://i.imgur.com/yfAQu1E.png",
         },
     },
     ////////////////////////////
@@ -600,14 +601,14 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "Name that tune!",
-            audioSrc: mmmDDD,
+            audioSrc: mmmYaMOMG,
         },
         answerProps: {
-            headerText: "Dreidel, Dreidel, Dreidel",
-            bodyText: "Mikhl Gelbart",
+            headerText: "You're a Mean One, Mr. Grinch",
+            bodyText: "Albert Hague",
             videoSrc:
-                "https://www.youtube.com/embed/26GnFJm04AE?si=MObc_S_BYnFtIKA_",
-            startTime: 5,
+                "https://www.youtube.com/embed/3Hj3U18FHgQ?si=_12XmPUXQHveHeqZ",
+            startTime: 27,
         },
     },
     {
@@ -626,6 +627,19 @@ export const christmas2025Cards = [
     {
         questionProps: {
             headerText: "Name that tune!",
+            audioSrc: mmmDDD,
+        },
+        answerProps: {
+            headerText: "Dreidel, Dreidel, Dreidel",
+            bodyText: "Mikhl Gelbart",
+            videoSrc:
+                "https://www.youtube.com/embed/26GnFJm04AE?si=MObc_S_BYnFtIKA_",
+            startTime: 5,
+        },
+    },
+    {
+        questionProps: {
+            headerText: "Name that tune!",
             audioSrc: mmmLSN,
         },
         answerProps: {
@@ -636,19 +650,19 @@ export const christmas2025Cards = [
             startTime: 59,
         },
     },
-    {
-        questionProps: {
-            headerText: "Name that tune!",
-            audioSrc: mmmNQACT,
-        },
-        answerProps: {
-            headerText: "Not Quite Almost Christmas Time",
-            bodyText: "Tom Cardy",
-            videoSrc:
-                "https://www.youtube.com/embed/Ap9GqyLoWyY?si=zOeoPK4M6ptgbh0y",
-            startTime: 41,
-        },
-    },
+    // {
+    //     questionProps: {
+    //         headerText: "Name that tune!",
+    //         audioSrc: mmmNQACT,
+    //     },
+    //     answerProps: {
+    //         headerText: "Not Quite Almost Christmas Time",
+    //         bodyText: "Tom Cardy",
+    //         videoSrc:
+    //             "https://www.youtube.com/embed/Ap9GqyLoWyY?si=zOeoPK4M6ptgbh0y",
+    //         startTime: 41,
+    //     },
+    // },
     ////////////////
     // #endregion //
     ////////////////

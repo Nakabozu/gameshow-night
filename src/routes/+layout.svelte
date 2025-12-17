@@ -1,21 +1,21 @@
 <script>
-	import './styles.css';
+    import "./styles.css";
 </script>
 
 <div class="app">
-	<main>
-		<slot />
-	</main>
+    <main>
+        <slot />
+    </main>
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-		width: 100%;
-	}
-	main{
-		height: 100dvh;
-	}
+    .app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+    main {
+        height: 100dvh;
+    }
 </style>
