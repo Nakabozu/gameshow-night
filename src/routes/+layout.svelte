@@ -2,6 +2,11 @@
     import "./styles.css";
 </script>
 
+<svelte:head>
+    <title>Welcome to the Show!</title>
+    <meta name="description" content="Game Show Night with Naka!" />
+</svelte:head>
+
 <div class="app">
     <main>
         <slot />
@@ -17,5 +22,7 @@
     }
     main {
         height: 100dvh;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 </style>

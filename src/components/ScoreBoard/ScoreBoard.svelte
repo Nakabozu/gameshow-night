@@ -5,6 +5,7 @@
     // @ts-nocheck
     import PlayerCard from "./PlayerCard.svelte";
     export let theme;
+    export let gameId;
 
     let isFormOn = false;
     let name = "";
@@ -70,11 +71,21 @@
     {/each}
     {#if isFormOn}
         <menu class="player-control">
+            <label for="new_player_name">Add player to Game {gameId}</label>
             <form on:submit|preventDefault={addPlayer}>
                 <input id="new_player_name" type="text" bind:value={name} />
                 <button type="submit">+</button>
             </form>
-            <button on:click={clearAllPlayers}>🧹</button>
+            <label for="new_player_name">
+                Clear all players from Game {gameId}
+            </label>
+            <button
+                id="clear_players_from_game"
+                class="btn-clear"
+                on:click={clearAllPlayers}
+            >
+                🧹 CLEAR ALL PLAYERS 🧹
+            </button>
         </menu>
     {/if}
     <button class="reset-button" on:click={resetBuzzers}>Reset Buzzers</button>
@@ -94,12 +105,24 @@
         z-index: 5;
     }
 
+    .player-control {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     form {
         z-index: 5;
 
         display: flex;
         flex-direction: row;
         gap: 10px;
+    }
+
+    label {
+        width: 100%;
+        color: blue;
+        text-align: center;
     }
 
     button {
@@ -118,6 +141,9 @@
         /* border */
         border-radius: 6px;
     }
+    .btn-clear {
+        padding: 4px 8px;
+    }
     .reset-button {
         background-color: white;
         color: #97c1e6;
@@ -126,11 +152,5 @@
         right: 20px;
         top: 20px;
         padding: 4px 16px;
-    }
-
-    .player-control {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
     }
 </style>
